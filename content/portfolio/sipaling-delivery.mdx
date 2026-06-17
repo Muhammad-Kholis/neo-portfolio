@@ -1,0 +1,29 @@
+---
+title: "Sipaling Delivery"
+desc: "First mobile app project built with Flutter focusing on modern UI/UX."
+link: "#portfolio"
+cover: "https://mkholis-portfolio.pages.dev/portfolio/mobile_sipaling/cover.png"
+badge: "Mobile"
+order: 2
+gallery: https://mkholis-portfolio.pages.dev/portfolio/mobile_sipaling/cover.png, https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?w=1200&auto=format&fit=crop&q=80, https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&auto=format&fit=crop&q=80
+---
+
+# Studi Kasus: Sipaling Delivery
+
+**Sipaling Delivery** adalah proyek perintis aplikasi mobile berorientasi pada layanan pesan antar makanan instan (*on-demand food delivery*). Proyek ini dirancang khusus untuk memadukan estetika UI modern berkelas tinggi dengan navigasi pengguna (*User Journey*) yang sangat intuitif dan responsif.
+
+## 🚀 Fitur Utama
+1. **Pencarian Makanan & Restoran Cerdas:** Pengguna dapat mencari makanan favorit berdasarkan kategori, penilaian, kedekatan jarak, atau harga termurah secara real-time.
+2. **Interactive Food Customization:** Memilih opsi porsi tambahan, tingkat kepedasan, dan instruksi khusus koki langsung dari menu detail makanan.
+3. **Peta Pelacakan Pengemudi:** Integrasi peta interaktif untuk menampilkan rute dari restoran ke alamat tujuan pengiriman beserta perkiraan estimasi waktu kedatangan (ETA).
+4. **Desain UI/UX Gelap & Terang Modern:** Estetika antarmuka dengan elemen sudut membulat lebar (*rounded-3xl*), kontras warna yang nyaman di mata, dan efek kedalaman dinamis.
+
+## 🛠️ Teknologi yang Digunakan
+* **Framework SDK:** Flutter (Dart) untuk basis aplikasi multiplatform berkinerja tinggi.
+* **State Management:** Provider / BLoC untuk pemisahan logika bisnis dan rendering UI yang bersih.
+* **Integrasi Peta:** Google Maps SDK & Flutter Map untuk rendering jalan dan marker pengemudi.
+* **Penyimpanan Lokal:** SQLite & Shared Preferences untuk mengelola keranjang belanja pengguna secara offline.
+
+## 🧠 Tantangan & Solusi
+* **Tantangan:** Menyinkronkan perubahan status item di keranjang belanja secara real-time ke UI tanpa menimbulkan lag atau re-rendering widget secara berlebihan.
+* **Solusi:** Menerapkan arsitektur *clean state management* berbasis pemisahan controller, di mana hanya bagian widget kuantitas makanan yang diperbarui (*selective rebuild*) menggunakan widget `Selector` atau BLoC `BlocBuilder`.

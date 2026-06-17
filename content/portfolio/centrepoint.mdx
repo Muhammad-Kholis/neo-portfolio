@@ -1,0 +1,29 @@
+---
+title: "Centrepoint"
+desc: "Community management app for POLICY organization at PNL."
+link: "#portfolio"
+cover: "/images/portfolio/centrepoint.webp"
+badge: "Mobile"
+order: 3
+gallery: /images/portfolio/centrepoint.webp, https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1200&auto=format&fit=crop&q=80, https://images.unsplash.com/photo-1551650975-87deedd944c3?w=1200&auto=format&fit=crop&q=80
+---
+
+# Studi Kasus: Centrepoint
+
+**Centrepoint** adalah aplikasi manajemen komunitas yang dirancang khusus untuk mewadahi kebutuhan koordinasi, publikasi, dan administrasi anggota **POLICY** (Polytechnic Linux Community) di Politeknik Negeri Lhokseumawe. Aplikasi ini menjadi pusat informasi (hub) digital utama bagi seluruh pengurus dan anggota aktif.
+
+## 🚀 Fitur Utama
+1. **Papan Informasi (News Board) Terpusat:** Pengurus POLICY dapat mempublikasikan agenda kegiatan, kelas pembelajaran Linux, berita komunitas, serta pengumuman penting langsung ke beranda anggota.
+2. **Presensi Digital Berbasis QR-Code:** Mempermudah pencatatan kehadiran anggota pada setiap rapat kerja atau workshop mingguan komunitas POLICY secara instan.
+3. **Penyimpanan Modul Kuliah & Dokumentasi:** Akses repositori e-book pembelajaran Linux, administrasi jaringan, dokumentasi pemrograman, serta materi kegiatan komunitas secara offline.
+4. **Profil Keanggotaan POLICY:** Mengelola basis data keahlian anggota (misalnya SysAdmin, Devops, Web Developer) guna memudahkan koordinasi pembagian tim proyek kerja.
+
+## 🛠️ Teknologi yang Digunakan
+* **Framework:** Flutter (Dart) untuk membangun aplikasi mobile tangguh dengan visual seragam di Android & iOS.
+* **Backend Integration:** Firebase (Firestore & Firebase Auth) untuk basis data real-time dan manajemen akun anggota yang terenkripsi.
+* **QR Reader:** QR Code Scanner SDK untuk validasi presensi instan pengurus/anggota.
+* **Storage:** Firebase Cloud Storage untuk menyimpan modul materi perkuliahan/organisasi.
+
+## 🧠 Tantangan & Solusi
+* **Tantangan:** Mengamankan data presensi anggota agar tidak dapat dipalsukan (manipulasi lokasi atau membagikan gambar QR-code antar anggota di luar ruangan rapat).
+* **Solusi:** Menambahkan verifikasi koordinat wilayah (geofencing) menggunakan plugin GPS lokasi. Pengguna hanya dapat memindai QR presensi jika berada dalam radius maksimal 15 meter dari titik pusat penyelenggaraan kegiatan POLICY di Politeknik Negeri Lhokseumawe.

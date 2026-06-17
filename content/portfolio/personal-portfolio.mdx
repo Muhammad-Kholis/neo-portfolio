@@ -1,0 +1,29 @@
+---
+title: "Personal Portfolio"
+desc: "My personal portfolio website built with Next.js & TailwindCSS."
+link: "https://mkholis-portfolio.pages.dev/"
+cover: "/images/portfolio/webportfolio.webp"
+badge: "Web"
+order: 4
+gallery: /images/portfolio/webportfolio.webp, https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=1200&auto=format&fit=crop&q=80
+---
+
+# Studi Kasus: Personal Portfolio Website
+
+Website **Personal Portfolio** ini dibuat sebagai representasi karir profesional saya (Muhammad Kholis) dalam dunia rekayasa perangkat lunak (*Software Engineering*). Melalui platform ini, saya menyajikan keahlian teknis, riwayat pendidikan formal, proyek yang telah dikembangkan, dokumentasi kegiatan, serta case study mendalam berbasis MDX.
+
+## 🚀 Fitur Utama
+1. **Pemuatan Berbasis MDX Konten:** Seluruh proyek ditulis menggunakan format `.mdx` statis, memisahkan lapisan data tulisan dari visual untuk pemeliharaan yang bersih.
+2. **Dynamic Filtering & Real-time Search:** Filter kategori proyek yang interaktif (All, Web, Mobile) yang langsung diperbarui saat diketik tanpa memuat ulang browser.
+3. **Interactive Screenshot Lightbox:** Galeri carousel interaktif dengan opsi modal *lightbox backdrop blur* untuk meninjau screenshot tampilan aplikasi secara detail.
+4. **Theme Switcher dengan Animasi:** Peralihan tema gelap (*dark mode*) dan terang (*light mode*) yang presisi dan tersimpan di penyimpanan lokal (*local storage*) pengguna.
+
+## 🛠️ Teknologi yang Digunakan
+* **Framework Core:** Next.js 15 (React 18) memanfaatkan Server Components untuk memuat berkas lokal MDX secara cepat saat proses kompilasi (Static Site Generation).
+* **Styling & Theme:** TailwindCSS untuk visual utilitas yang dinamis & NextThemes untuk transisi tema.
+* **Component Library:** HeroUI (NextUI) untuk komponen kustom berkualitas tinggi dan ramah aksesibilitas.
+* **Akselerasi Animasi:** Framer Motion & MagicUI untuk efek gerak premium (seperti *animated gradient text* dan *ripple animation*).
+
+## 🧠 Tantangan & Solusi
+* **Tantangan:** Menampilkan data portofolio dari file statis MDX secara langsung di sisi klien tanpa kehilangan interaktivitas animasi penyaringan (*filter chips*) dan input pencarian yang membutuhkan status reaksi (*stateful reaction*).
+* **Solusi:** Memisahkan arsitektur halaman utama menjadi server-client. Server Component ([page.tsx](file:///E:/PERSONAL%20BRANDING/portfolio-mkholis/app/page.tsx)) membaca dan mem-parsing frontmatter MDX secara statis, lalu meneruskannya sebagai properti data ke Client Component ([home-client.tsx](file:///E:/PERSONAL%20BRANDING/portfolio-mkholis/app/home-client.tsx)) untuk mengelola filter, input cari, dan transisi Grid layout Framer Motion.

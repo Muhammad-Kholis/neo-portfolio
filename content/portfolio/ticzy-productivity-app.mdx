@@ -1,0 +1,29 @@
+---
+title: "Ticzy – Productivity App"
+desc: "A daily productivity management app with To-Do, Finance, Scheduler, and Notes."
+link: "https://play.google.com/store/apps/details?id=com.parzello.ticzy"
+cover: "/images/portfolio/ticzy.webp"
+badge: "Mobile"
+order: 8
+gallery: /images/portfolio/ticzy.webp, https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?w=1200&auto=format&fit=crop&q=80
+---
+
+# Studi Kasus: Ticzy – Productivity App
+
+**Ticzy** adalah aplikasi manajemen produktivitas harian komprehensif yang dirancang untuk membantu pengguna mengorganisasi kehidupan mereka di dalam satu platform tunggal. Ticzy mengintegrasikan empat pilar penting produktivitas: Daftar Tugas (To-Do List), Catatan Keuangan (Finance Tracker), Penjadwal Agenda (Scheduler), dan Buku Catatan Digital (Notes).
+
+## 🚀 Fitur Utama
+1. **Daftar Tugas & Pengingat Interaktif:** Mengatur prioritas tugas (Tinggi, Sedang, Rendah), tenggat waktu (*due dates*), serta pengingat alarm harian agar tidak ada agenda yang terlewat.
+2. **Manajemen Keuangan Pribadi:** Melacak pemasukan dan pengeluaran harian lengkap dengan bagan statistik visual untuk meninjau pola pengeluaran bulanan.
+3. **Penjadwalan Agenda Kalender:** Sistem kalender dinamis untuk mencatatkan rencana rapat, kegiatan perkuliahan, atau janji temu secara mendalam.
+4. **Buku Catatan Kaya Teks:** Menulis catatan harian, artikel ide, atau draf belajar dengan dukungan penformatan teks (*rich text formatting*).
+
+## 🛠️ Teknologi yang Digunakan
+* **Framework:** Flutter (Dart) untuk visual antarmuka modern yang mulus dan cepat.
+* **Penyimpanan Lokal Utama:** SQLite (berbasis sqflite package) untuk keamanan database lokal berkecepatan tinggi yang tidak membutuhkan internet (offline-first).
+* **Integrasi Keamanan:** Biometric Authentication (Fingerprint & Face ID) untuk mengunci aplikasi dan melindungi data keuangan pribadi pengguna.
+* **Bagan Visual:** FL Chart untuk merender grafik garis dan lingkaran statistik pengeluaran keuangan.
+
+## 🧠 Tantangan & Solusi
+* **Tantangan:** Menjamin data keuangan dan catatan harian pengguna tetap aman namun aplikasi harus tetap responsif saat melakukan kueri (*queries*) penyaringan data keuangan yang melibatkan ribuan baris transaksi.
+* **Solusi:** Membangun kueri terindeks (indexed queries) di database SQLite lokal, serta menggunakan *lazy loading list view* (ListView.builder) agar rendering data keuangan tidak membebani memori, sehingga transisi halaman tetap terasa lancar di 60 FPS.

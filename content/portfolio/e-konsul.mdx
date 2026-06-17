@@ -1,0 +1,29 @@
+---
+title: "E-Konsul"
+desc: "Consultation app for students and lecturers at Politeknik Negeri Lhokseumawe."
+link: "#portfolio"
+cover: "/images/portfolio/ekonsul.webp"
+badge: "Mobile"
+order: 6
+gallery: /images/portfolio/ekonsul.webp, https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&auto=format&fit=crop&q=80
+---
+
+# Studi Kasus: E-Konsul App
+
+**E-Konsul** adalah aplikasi bimbingan dan konsultasi akademik berbasis mobile yang dirancang untuk menjembatani interaksi antara mahasiswa dan dosen pembimbing akademik di Politeknik Negeri Lhokseumawe. Aplikasi ini bertujuan mendigitalkan proses konsultasi KRS, skripsi, kerja praktek, serta konseling masalah akademik secara terstruktur.
+
+## 🚀 Fitur Utama
+1. **Sistem Penjadwalan Konsultasi:** Mahasiswa dapat mengajukan jadwal konsultasi dengan memilih hari, jam, dan topik bahasan sesuai slot waktu kosong dosen yang terdaftar di sistem.
+2. **Real-time Chat & Konsultasi Online:** Fitur obrolan teks instan langsung di dalam aplikasi untuk melakukan tanya-jawab akademik tanpa perlu bertatap muka.
+3. **Log & Catatan Hasil Bimbingan:** Dosen pembimbing dapat menginput arahan, persetujuan KRS, atau catatan revisi tugas akhir yang langsung tercatat di profil mahasiswa.
+4. **Notifikasi Dorong (Push Notifications):** Memberikan pemberitahuan instan saat dosen menyetujui, menolak, atau menjadwalkan ulang janji konsultasi.
+
+## 🛠️ Teknologi yang Digunakan
+* **Frontend Mobile:** Flutter (Dart) untuk visual UI yang clean dan performa gesit di perangkat berspesifikasi menengah ke bawah.
+* **Database & Auth:** Firebase Firestore (real-time chat) & Firebase Authentication (sistem login SSO kampus).
+* **Push Services:** Firebase Cloud Messaging (FCM) untuk pengiriman notifikasi instan.
+* **Notifikasi Lokal:** Flutter Local Notifications untuk penanganan pengingat waktu janji temu.
+
+## 🧠 Tantangan & Solusi
+* **Tantangan:** Mengelola riwayat chat konsultasi yang panjang agar tidak memakan RAM perangkat dan memastikan pesan terkirim secara instan tanpa ada tundaan (delay).
+* **Solusi:** Memanfaatkan Firestore query berbasis *pagination* (mengambil chat per 20 pesan menggunakan `limit` dan `startAfter`) serta mengimplementasikan *offline persistence* sehingga obrolan yang sudah dimuat dapat dibaca kembali secara instan tanpa membutuhkan koneksi internet.

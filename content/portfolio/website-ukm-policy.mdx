@@ -1,0 +1,29 @@
+---
+title: "Website UKM-POLICY"
+desc: "Official website for Polytechnic Linux Community with dynamic content and responsive design."
+link: "https://www.ukmpolicy.com/"
+cover: "/images/portfolio/webpolicy.webp"
+badge: "Web"
+order: 5
+gallery: /images/portfolio/webpolicy.webp, https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=1200&auto=format&fit=crop&q=80
+---
+
+# Studi Kasus: Website UKM-POLICY
+
+**Website UKM-POLICY** merupakan portal profil web resmi untuk **Unit Kegiatan Mahasiswa - Polytechnic Linux Community** di Politeknik Negeri Lhokseumawe. Web ini dibangun sebagai pusat publikasi visi-misi organisasi, struktur kepengurusan, divisi pelatihan teknologi (Programming, SysAdmin, Network, Design), serta jadwal bootcamp dan dokumentasi kegiatan.
+
+## 🚀 Fitur Utama
+1. **Pusat Informasi Divisi Pelatihan:** Memberikan gambaran detail silabus pembelajaran tahunan untuk masing-masing bidang peminatan (Linux server, pemrograman, dan desain grafis).
+2. **Katalog Struktur Organisasi Interaktif:** Menampilkan bagan pengurus organisasi POLICY dengan visualisasi kartu profil yang menarik.
+3. **Pendaftaran Anggota Baru Terintegrasi:** Formulir pendaftaran digital interaktif bagi mahasiswa baru yang berminat bergabung dengan UKM POLICY.
+4. **Blog Kegiatan & Artikel Teknologi:** Memfasilitasi anggota aktif POLICY untuk merilis artikel edukasi Linux atau berita kegiatan eksternal komunitas.
+
+## 🛠️ Teknologi yang Digunakan
+* **Framework:** Next.js (App Router) untuk meminimalkan beban pemuatan di jaringan kampus yang seringkali padat.
+* **Desain Visual:** TailwindCSS & HeroUI yang menjamin keselarasan palet warna khas UKM-POLICY.
+* **Integrasi Database:** REST API yang terhubung dengan backend admin panel terpisah untuk pengelolaan konten blog secara dinamis.
+* **Optimasi Aset:** NextJS Image Optimization untuk kompresi berkas gambar otomatis.
+
+## 🧠 Tantangan & Solusi
+* **Tantangan:** Mengamankan data pendaftaran mahasiswa baru dan memastikan pengisian form lancar saat volume lalu lintas pendaftaran memuncak dalam waktu bersamaan.
+* **Solusi:** Menerapkan validasi form ketat di sisi klien (Client-side validation) menggunakan React Hook Form, serta membatasi beban request server menggunakan sistem pembatasan laju akses (*rate-limiting*) di sisi API Route Next.js.

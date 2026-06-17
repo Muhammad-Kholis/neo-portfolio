@@ -1,0 +1,29 @@
+---
+title: "Emergency Center (EMTER)"
+desc: "Emergency response app with real-time chat, maps, and quick call features."
+link: "#portfolio"
+cover: "/images/portfolio/emter.webp"
+badge: "Mobile"
+order: 7
+gallery: /images/portfolio/emter.webp, https://images.unsplash.com/photo-1516550893923-42d28e5677af?w=1200&auto=format&fit=crop&q=80
+---
+
+# Studi Kasus: Emergency Center (EMTER)
+
+**Emergency Center (EMTER)** adalah aplikasi tanggap darurat (*emergency response*) berbasis mobile yang dikembangkan untuk memberikan bantuan cepat dalam situasi kritis. Aplikasi ini menghubungkan pengguna umum secara instan dengan instansi penyelamat terdekat (Pemadam Kebakaran, Ambulans Rumah Sakit, Kepolisian, dan Tim SAR).
+
+## 🚀 Fitur Utama
+1. **Tombol SOS Satu Sentuhan:** Menekan tombol darurat SOS secara otomatis mengirimkan sinyal bahaya serta membagikan koordinat GPS presisi pengguna ke operator EMTER terdekat.
+2. **Peta Instansi & Rute Navigasi:** Menampilkan peta lokasi instansi darurat terdekat dari posisi pengguna beserta navigasi rute tercepat untuk memangkas waktu evakuasi.
+3. **Panggilan Cepat (Speed Dial):** Hubungan langsung dengan nomor darurat nasional (112, 110, 118, 113) melalui satu ketukan jari.
+4. **Real-time Live Chat Operator:** Obrolan teks darurat untuk mengirimkan informasi tambahan (seperti foto situasi bencana atau deskripsi luka korban) saat suara tidak memungkinkan.
+
+## 🛠️ Teknologi yang Digunakan
+* **Framework Core:** Flutter (Dart SDK) untuk rendering UI yang seragam dan andal dalam situasi darurat.
+* **Geolokasi & Maps:** Google Maps SDK, Geocoding, & Geolocator untuk pelacakan koordinat GPS real-time.
+* **Backend Database:** Firebase (Firestore & Firebase Functions) untuk pengelolaan antrean laporan darurat.
+* **Platform Integrasi:** Android System Calls untuk inisiasi panggilan telepon darurat secara langsung dari aplikasi.
+
+## 🧠 Tantangan & Solusi
+* **Tantangan:** Mengirimkan laporan darurat dan koordinat lokasi secara andal dalam kondisi jaringan internet yang sangat buruk (sinyal 2G/lemah di lokasi bencana).
+* **Solusi:** Mengompresi payload data koordinat lokasi sekecil mungkin ke dalam bentuk format string terkompresi. Jika jaringan internet mati total, EMTER memiliki fitur fallback otomatis yang mengalihkan pengiriman data SOS menggunakan SMS Gateway berformat terenkripsi yang langsung diterima oleh sistem operator.
