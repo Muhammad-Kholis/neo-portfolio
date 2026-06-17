@@ -2,6 +2,7 @@ import { Bricolage_Grotesque, Inter } from "next/font/google"
 
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
+import { SmoothCursor } from "@/components/ui/smooth-cursor"
 import { cn } from "@/lib/utils"
 
 const bricolageGrotesque = Bricolage_Grotesque({
@@ -38,7 +39,10 @@ export default function RootLayout({
         />
       </head>
       <body>
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          <SmoothCursor />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   )

@@ -1,6 +1,7 @@
 "use client"
 
-import { useState, useRef } from "react"
+import { useState, useRef, useEffect } from "react"
+import { useTheme } from "next-themes"
 import Link from "next/link"
 import { PortfolioProject } from "@/lib/portfolio"
 
@@ -47,6 +48,13 @@ export default function HomeClient({ projects }: HomeClientProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [activeSlide, setActiveSlide] = useState(1)
   const sliderRef = useRef<HTMLDivElement>(null)
+
+  const { resolvedTheme, setTheme } = useTheme()
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
 
   const filteredProjects = projects.filter((project) => {
     const tags = getProjectTags(project.slug)
@@ -151,6 +159,17 @@ export default function HomeClient({ projects }: HomeClientProps) {
           </a>
         </div>
 
+        {/* Desktop Theme Toggle */}
+        <button
+          onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
+          className="hidden md:flex bg-secondary-fixed border-3 border-border-dark p-2 text-black neo-shadow active-push transition-all duration-200 items-center justify-center cursor-pointer"
+          aria-label="Toggle Theme"
+        >
+          <span className="material-symbols-outlined font-black" style={{ fontVariationSettings: "'FILL' 1" }}>
+            {!mounted || resolvedTheme === "dark" ? "light_mode" : "dark_mode"}
+          </span>
+        </button>
+
         {/* Desktop CTA */}
         <button
           onClick={() => {
@@ -163,15 +182,27 @@ export default function HomeClient({ projects }: HomeClientProps) {
           Hire Me
         </button>
 
-        {/* Mobile Toggle */}
-        <button
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="md:hidden text-on-background border-3 border-border-dark p-2 bg-primary-fixed neo-shadow active-push"
-        >
-          <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>
-            {isMenuOpen ? "close" : "menu"}
-          </span>
-        </button>
+        {/* Mobile Theme Toggle & Drawer Trigger */}
+        <div className="md:hidden flex gap-2">
+          <button
+            onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
+            className="text-black border-3 border-border-dark p-2 bg-secondary-fixed neo-shadow active-push cursor-pointer flex items-center justify-center"
+            aria-label="Toggle Theme"
+          >
+            <span className="material-symbols-outlined font-black" style={{ fontVariationSettings: "'FILL' 1" }}>
+              {!mounted || resolvedTheme === "dark" ? "light_mode" : "dark_mode"}
+            </span>
+          </button>
+
+          <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="text-on-background border-3 border-border-dark p-2 bg-primary-fixed neo-shadow active-push"
+          >
+            <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>
+              {isMenuOpen ? "close" : "menu"}
+            </span>
+          </button>
+        </div>
 
         {/* Mobile Dropdown */}
         {isMenuOpen && (
