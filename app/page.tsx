@@ -137,7 +137,7 @@ export default function Page() {
           >
             code_blocks
           </span>
-          MK.DEV
+          Portfolio
         </div>
 
         {/* Desktop Links */}
@@ -923,7 +923,7 @@ export default function Page() {
               >
                 code_blocks
               </span>{" "}
-              MK.DEV
+              Portfolio
             </div>
             <div className="font-display text-body-md text-black/60 font-bold">
               © 2024 Muhammad Kholis. Built with precision.

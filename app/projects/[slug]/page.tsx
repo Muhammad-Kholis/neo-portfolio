@@ -160,7 +160,7 @@ export default function ProjectDetailPage({ params }: { params: Promise<{ slug: 
           >
             code_blocks
           </span>
-          MK.DEV
+          Portfolio
         </Link>
 
         {/* Desktop Links */}
@@ -477,7 +477,7 @@ export default function ProjectDetailPage({ params }: { params: Promise<{ slug: 
               >
                 code_blocks
               </span>{" "}
-              MK.DEV
+              Portfolio
             </div>
             <div className="font-display text-body-md text-black/60 font-bold">
               © 2024 Muhammad Kholis. Built with precision.
