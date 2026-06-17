@@ -314,7 +314,7 @@ export default function HomeClient({ projects }: HomeClientProps) {
             <div className="absolute inset-0 bg-primary-fixed border-4 border-border-dark translate-x-4 translate-y-4 group-hover:translate-x-5 group-hover:translate-y-5 transition-transform"></div>
             <img
               className="relative z-10 w-full max-w-md border-4 border-border-dark bg-background object-cover grayscale hover:grayscale-0 transition-all duration-500"
-              src="https://lh3.googleusercontent.com/aida/AP1WRLtLgkupLJ4NIJr64ZzVtHIgu74HY3TadmCpCKBRiGSxYALKkagyi9c3-IQMBjhXqEOJk63Idne2oWWGni_2jjt7wX-vn82WLQToX23FK8D1Qz9VTjkhmFdnzEMPv2UxDRFNOZEc1_1Y4lhOO1nmBzIwFcNNoY8Fjly-8IKxx1-B6q6qsQ2GbVqnfgMuo-pivinOWgUGhZZNvwUN6G2hdzFOm3xLlx4oTKn_1uvnfY31z07f-CFX8Np7NQ"
+              src="/images/muhammadkholis.webp"
               alt="Muhammad Kholis Profile Photo"
               style={{ aspectRatio: "1/1" }}
             />
@@ -430,7 +430,7 @@ export default function HomeClient({ projects }: HomeClientProps) {
             <div className="relative h-full bg-white border-4 border-black overflow-hidden hover:-translate-y-1 transition-transform">
               <img
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
-                src="https://lh3.googleusercontent.com/aida/AP1WRLuA_9XVbH-lxZXKsstA_R7ovBsGkzPgd9OL1n8YG2nAfpGStIVaOYTDwRpPydIZv-mE-ZZNHt7rzml4aMPRvYaHnZOFeJ5E2rKIRmFa-cwJS6iRGeEqaUdofKg_tEaomiFXIiyfcp-3trtWLJSi_t1rIdaeJN_QlB4MWg4m1Z7ehAJ0SobzCxE_aVLurffvAa4eTg3U2pdAFlVfLAAbrZyOBxFCln9rktf9-s-KZMl6jke3Yi5NvF4XG6w"
+                src="/images/muhammadkholis_ui_.webp"
                 alt="Workflow visual archive"
               />
               <div className="absolute top-4 left-4 bg-secondary-fixed border-2 border-black px-3 py-1 text-sm font-black uppercase neo-shadow transform -rotate-3 text-black">
@@ -444,7 +444,7 @@ export default function HomeClient({ projects }: HomeClientProps) {
             <div className="relative h-full bg-white border-4 border-black overflow-hidden hover:-translate-y-1 transition-transform">
               <img
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
-                src="https://lh3.googleusercontent.com/aida/AP1WRLuVKhSW7Z4Z2GsnXg-E5a6dtPQbtfPZTRz4LENN4RQpH_yNbomWzX1Pa9JtleEQy3ikCqgldYBi2ggJfyaBQ0_CaOAjyjFbn0cbw-cSWB4rqQl9SiAmFVXTbd8RlruwkYGtwtLrj8tPhiy83HmTI7iifpKkBk_i1WZ3-Vm0Vy6RsL90aqrbp0mCVpLlA9GrlkOaltmoFgUXPQEut0vYsyrQPdj_6FHeNKcJCzlDIP0WrzhCZfryqRHMJw"
+                src="/images/muhammadkholis2.webp"
                 alt="Behind the scenes visual archive"
               />
               <div className="absolute bottom-4 right-4 bg-vibrant-orange border-2 border-black px-3 py-1 text-sm font-black uppercase neo-shadow transform rotate-6 text-black">
@@ -458,7 +458,7 @@ export default function HomeClient({ projects }: HomeClientProps) {
             <div className="relative h-full bg-white border-4 border-black overflow-hidden hover:-translate-y-1 transition-transform">
               <img
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
-                src="https://lh3.googleusercontent.com/aida/AP1WRLtLgkupLJ4NIJr64ZzVtHIgu74HY3TadmCpCKBRiGSxYALKkagyi9c3-IQMBjhXqEOJk63Idne2oWWGni_2jjt7wX-vn82WLQToX23FK8D1Qz9VTjkhmFdnzEMPv2UxDRFNOZEc1_1Y4lhOO1nmBzIwFcNNoY8Fjly-8IKxx1-B6q6qsQ2GbVqnfgMuo-pivinOWgUGhZZNvwUN6G2hdzFOm3xLlx4oTKn_1uvnfY31z07f-CFX8Np7NQ"
+                src="/images/muhammadkholis.webp"
                 alt="Moments visual archive"
               />
               <div className="absolute top-4 right-4 bg-primary-container border-2 border-black px-3 py-1 text-sm font-black uppercase neo-shadow transform rotate-2 text-black">
@@ -472,7 +472,7 @@ export default function HomeClient({ projects }: HomeClientProps) {
             <div className="relative h-full bg-white border-4 border-black overflow-hidden hover:-translate-y-1 transition-transform">
               <img
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
-                src="https://lh3.googleusercontent.com/aida/AP1WRLu79PxdsPbCAUTSTrVaUN9NDKNwM8bD2XUfTT7rFiQ_s6shIcEHnhBkvRp4cXrCiHfQHV8izZK3imd9ZHXmimiQP889Nd7EhMLDDBVPDPtHvFgGcfWy4n2K0aFeUVhLA6ggIlTotymClP882TD3HjQpE_PtEF60tOIYeqF4xma_T2ug3wkOWcOPp-_Nmd9XtTUOQcGIQHvQgKtUxngG1uE9jP4MRBz2fKTkAWZsw_orLeWe7zqmA1ayd_0"
+                src="/images/muhammadkholis2.webp"
                 alt="Process visual archive"
               />
               <div className="absolute bottom-4 left-4 bg-secondary-container border-2 border-black px-3 py-1 text-sm font-black uppercase neo-shadow transform -rotate-2 text-black">
@@ -841,7 +841,7 @@ export default function HomeClient({ projects }: HomeClientProps) {
                 <div className="h-64 relative">
                   <img
                     className="w-full h-full object-cover border-b-4 border-black"
-                    src="https://lh3.googleusercontent.com/aida/AP1WRLuVKhSW7Z4Z2GsnXg-E5a6dtPQbtfPZTRz4LENN4RQpH_yNbomWzX1Pa9JtleEQy3ikCqgldYBi2ggJfyaBQ0_CaOAjyjFbn0cbw-cSWB4rqQl9SiAmFVXTbd8RlruwkYGtwtLrj8tPhiy83HmTI7iifpKkBk_i1WZ3-Vm0Vy6RsL90aqrbp0mCVpLlA9GrlkOaltmoFgUXPQEut0vYsyrQPdj_6FHeNKcJCzlDIP0WrzhCZfryqRHMJw"
+                    src="/kegiatan/kmipn.webp"
                     alt="Hackathon KMIPN VI"
                   />
                   <div className="absolute top-4 left-4 bg-vibrant-orange border-2 border-black px-2 py-1 text-xs font-bold neo-shadow text-black">
@@ -869,7 +869,7 @@ export default function HomeClient({ projects }: HomeClientProps) {
                 <div className="h-64 relative">
                   <img
                     className="w-full h-full object-cover border-b-4 border-black"
-                    src="https://lh3.googleusercontent.com/aida/AP1WRLuA_9XVbH-lxZXKsstA_R7ovBsGkzPgd9OL1n8YG2nAfpGStIVaOYTDwRpPydIZv-mE-ZZNHt7rzml4aMPRvYaHnZOFeJ5E2rKIRmFa-cwJS6iRGeEqaUdofKg_tEaomiFXIiyfcp-3trtWLJSi_t1rIdaeJN_QlB4MWg4m1Z7ehAJ0SobzCxE_aVLurffvAa4eTg3U2pdAFlVfLAAbrZyOBxFCln9rktf9-s-KZMl6jke3Yi5NvF4XG6w"
+                    src="/kegiatan/komitpnl.webp"
                     alt="Komit PNL"
                   />
                   <div className="absolute top-4 left-4 bg-primary-container border-2 border-black px-2 py-1 text-xs font-bold neo-shadow text-black">
@@ -897,7 +897,7 @@ export default function HomeClient({ projects }: HomeClientProps) {
                 <div className="h-64 relative">
                   <img
                     className="w-full h-full object-cover border-b-4 border-black"
-                    src="https://lh3.googleusercontent.com/aida/AP1WRLtLgkupLJ4NIJr64ZzVtHIgu74HY3TadmCpCKBRiGSxYALKkagyi9c3-IQMBjhXqEOJk63Idne2oWWGni_2jjt7wX-vn82WLQToX23FK8D1Qz9VTjkhmFdnzEMPv2UxDRFNOZEc1_1Y4lhOO1nmBzIwFcNNoY8Fjly-8IKxx1-B6q6qsQ2GbVqnfgMuo-pivinOWgUGhZZNvwUN6G2hdzFOm3xLlx4oTKn_1uvnfY31z07f-CFX8Np7NQ"
+                    src="/kegiatan/ukmpolicy.webp"
                     alt="UKM POLICY"
                   />
                   <div className="absolute top-4 left-4 bg-secondary-fixed border-2 border-black px-2 py-1 text-xs font-bold neo-shadow text-black">
@@ -943,7 +943,7 @@ export default function HomeClient({ projects }: HomeClientProps) {
             <div className="relative h-64 md:h-auto p-4 bg-white flex items-center justify-center">
               <img
                 className="w-full h-full object-cover border-4 border-border-dark neo-shadow"
-                src="https://lh3.googleusercontent.com/aida/AP1WRLuVKhSW7Z4Z2GsnXg-E5a6dtPQbtfPZTRz4LENN4RQpH_yNbomWzX1Pa9JtleEQy3ikCqgldYBi2ggJfyaBQ0_CaOAjyjFbn0cbw-cSWB4rqQl9SiAmFVXTbd8RlruwkYGtwtLrj8tPhiy83HmTI7iifpKkBk_i1WZ3-Vm0Vy6RsL90aqrbp0mCVpLlA9GrlkOaltmoFgUXPQEut0vYsyrQPdj_6FHeNKcJCzlDIP0WrzhCZfryqRHMJw"
+                src="/kegiatan/kmipn.webp"
                 alt="Spotlight Event visual"
               />
             </div>

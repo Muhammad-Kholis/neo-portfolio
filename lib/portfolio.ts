@@ -54,12 +54,25 @@ export function getPortfolioProjects(): PortfolioProject[] {
           .filter(Boolean)
       : []
 
+    const localCovers: Record<string, string> = {
+      "centrepoint": "/portfolio/centrepoint.webp",
+      "e-konsul": "/portfolio/ekonsul.webp",
+      "emergency-center": "/portfolio/emter.webp",
+      "parzello-website": "/portfolio/parzelloweb.webp",
+      "personal-portfolio": "/portfolio/webportfolio.webp",
+      "sipaling-delivery": "/portfolio/sipaling.webp",
+      "ticzy-productivity-app": "/portfolio/ticzy.webp",
+      "website-ukm-policy": "/portfolio/webpolicy.webp",
+    }
+
+    const cover = localCovers[slug] || frontmatter.cover || ""
+
     return {
       slug,
       title: frontmatter.title || slug,
       desc: frontmatter.desc || "",
       link: frontmatter.link || "",
-      cover: frontmatter.cover || "",
+      cover,
       badge: frontmatter.badge || "Web",
       order: parseInt(frontmatter.order, 10) || 0,
       gallery,
