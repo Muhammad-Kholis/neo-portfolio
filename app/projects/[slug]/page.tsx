@@ -21,95 +21,95 @@ const projectDetails: Record<string, ProjectDetail> = {
   zellopos: {
     id: "zellopos",
     title: "ZELLOPOS",
-    subtitle: "Modern POS for MSMEs. A robust, scalable point-of-sale solution designed to empower micro, small, and medium enterprises with real-time analytics and inventory management.",
+    subtitle: "Modern POS for MSMEs. Sistem Point of Sale (POS) lintas platform yang dirancang untuk UMKM, menampilkan pelacakan inventaris waktu nyata, pemrosesan transaksi yang aman, serta sinkronisasi multi-platform terpadu.",
     bannerImg: "https://lh3.googleusercontent.com/aida/AP1WRLuNQGLd2JU26AlXLNp1hUzIannmzguPVgZoozKH4vk_7QmImVM-0nWn-cFsUZ-7KGX73cubz0BnliDgnlOEnWoVhH45ZuDkbL3tpx6fI5LI8hy8bs0x5j-3BdJvDrlsGeLWfGNg8iLX6bxd37AOWpy2JnLcov6WUjlVFO730_m2RkHMNHiYf6DfsFqer5-Afz3qrE-ZYFDek61sFHR8IagGN5hxhftuTMGTIEifrJFloBinGMolzPuvK2c",
     role: "Fullstack Developer",
     timeline: "3 Months",
-    category: "Mobile App",
+    category: "Mobile App & Web",
     description: "ZelloPOS was built to address the core challenges faced by MSMEs in managing their daily operations.",
     overview: "ZelloPOS was built to address the core challenges faced by MSMEs in managing their daily operations. By shifting away from complex, legacy POS systems, we aimed to deliver a solution that is both powerful and highly accessible.",
-    overviewExtra: "Through a user-centered design process, we developed an offline-first mobile application that seamlessly synchronizes data once a connection is restored. This ensures business continuity for merchants operating in areas with unreliable internet infrastructure.",
+    overviewExtra: "Through a user-centered design process, we developed an offline-first mobile application that seamlessly synchronizes data once a connection is restored. This ensures business continuity for merchants operating in areas with unreliable internet infrastructure. Published on Google Play Store.",
     gallery: [
       "https://lh3.googleusercontent.com/aida/AP1WRLtEDPCVA7z3nTaRvIAzng5Ea8-W7nx7BqP0bHF2RdCuukjo6R5wYFES6kfZ2SjlugNAvb9CUhJo_c8bwNpwk7x22auM8tJpbZyMTrVrkhJLdYe8MdYFCBDCPjTmLzYGZ9EE3zoyqbBsTWDaEAfNjj5VzZLl0SY8jHlnhPI6akz8u4CYzwCfqWX6FouvpqfzQdZudOD6WfxoFmsQ3Y3IwJ5ex-Z8JYCbbaOvIO1CvEmZqI1bJJQ1rJ_Czw",
       "https://lh3.googleusercontent.com/aida/AP1WRLuA_9XVbH-lxZXKsstA_R7ovBsGkzPgd9OL1n8YG2nAfpGStIVaOYTDwRpPydIZv-mE-ZZNHt7rzml4aMPRvYaHnZOFeJ5E2rKIRmFa-cwJS6iRGeEqaUdofKg_tEaomiFXIiyfcp-3trtWLJSi_t1rIdaeJN_QlB4MWg4m1Z7ehAJ0SobzCxE_aVLurffvAa4eTg3U2pdAFlVfLAAbrZyOBxFCln9rktf9-s-KZMl6jke3Yi5NvF4XG6w",
       "https://lh3.googleusercontent.com/aida/AP1WRLtEDPCVA7z3nTaRvIAzng5Ea8-W7nx7BqP0bHF2RdCuukjo6R5wYFES6kfZ2SjlugNAvb9CUhJo_c8bwNpwk7x22auM8tJpbZyMTrVrkhJLdYe8MdYFCBDCPjTmLzYGZ9EE3zoyqbBsTWDaEAfNjj5VzZLl0SY8jHlnhPI6akz8u4CYzwCfqWX6FouvpqfzQdZudOD6WfxoFmsQ3Y3IwJ5ex-Z8JYCbbaOvIO1CvEmZqI1bJJQ1rJ_Czw"
     ]
   },
-  webparzello: {
-    id: "webparzello",
-    title: "WEBPARZELLO",
-    subtitle: "A comprehensive web platform for logistics tracking and parcel management, connecting senders and carriers.",
+  "erp-pt-semadam": {
+    id: "erp-pt-semadam",
+    title: "ERP PT SEMADAM",
+    subtitle: "Enterprise Resource Planning. Sistem web Enterprise Resource Planning (ERP) untuk PT Semadam guna menyederhanakan operasional bisnis inti, menampilkan modul terintegrasi untuk inventaris, transaksi, dan pelaporan.",
     bannerImg: "https://lh3.googleusercontent.com/aida/AP1WRLvjfaAo5V9siHBVodQCtlIS6n4wcjQi8lWRnptAJvjo83z0YXoImscTAjSmXtp0OmD_xAHfZQTvYyj8cSYmDPneemGiutXZR5AwIkaWcoABwsqS7zHyCT-kidR6ntNwGUo1u1DbskIt_NrThksOlJt84gQT38Csx1E1fieFIyOiqrcgCEglDrB_FUcCDp4NlJg10vBrkL3eVM7dE7zwc5V6MJtRoHC0yFUGfAnnAvJx6pRr6V6o_wSl8ws",
-    role: "Frontend Engineer",
-    timeline: "2 Months",
-    category: "Web Platform",
-    description: "WebParzello streamlines the tracking of multiple packages across regions.",
-    overview: "WebParzello was designed to resolve critical logistics overheads for small merchants. We built a visual, drag-and-drop shipment board and integrated real-time barcode query parameters.",
-    overviewExtra: "Built using Next.js and Tailwind CSS, the platform supports real-time state tracking updates, high performance under heavy loads, and a responsive portal for customer lookup.",
+    role: "Fullstack Developer",
+    timeline: "4 Months",
+    category: "Web Application",
+    description: "Sistem ERP PT Semadam simplifies operational processes.",
+    overview: "Sistem ERP PT Semadam was designed to streamline operational workflows for PT Semadam. It integrates various crucial modules such as stock tracking, user access control lists, and automated financial reporting templates.",
+    overviewExtra: "Built with Next.js and Supabase, it supports robust role-based authentication and real-time updates for department inventory logs, reducing accounting overhead and audit times.",
     gallery: [
       "https://lh3.googleusercontent.com/aida/AP1WRLvjfaAo5V9siHBVodQCtlIS6n4wcjQi8lWRnptAJvjo83z0YXoImscTAjSmXtp0OmD_xAHfZQTvYyj8cSYmDPneemGiutXZR5AwIkaWcoABwsqS7zHyCT-kidR6ntNwGUo1u1DbskIt_NrThksOlJt84gQT38Csx1E1fieFIyOiqrcgCEglDrB_FUcCDp4NlJg10vBrkL3eVM7dE7zwc5V6MJtRoHC0yFUGfAnnAvJx6pRr6V6o_wSl8ws",
       "https://lh3.googleusercontent.com/aida/AP1WRLuA_9XVbH-lxZXKsstA_R7ovBsGkzPgd9OL1n8YG2nAfpGStIVaOYTDwRpPydIZv-mE-ZZNHt7rzml4aMPRvYaHnZOFeJ5E2rKIRmFa-cwJS6iRGeEqaUdofKg_tEaomiFXIiyfcp-3trtWLJSi_t1rIdaeJN_QlB4MWg4m1Z7ehAJ0SobzCxE_aVLurffvAa4eTg3U2pdAFlVfLAAbrZyOBxFCln9rktf9-s-KZMl6jke3Yi5NvF4XG6w"
     ]
   },
-  centrepoint: {
-    id: "centrepoint",
-    title: "CENTREPOINT",
-    subtitle: "Enterprise management system dashboard providing key business metrics, sales reporting, and employee management.",
+  ticzy: {
+    id: "ticzy",
+    title: "TICZY",
+    subtitle: "Personal Finance Companion. Aplikasi money tracker pribadi yang dilengkapi dengan pencatatan transaksi komprehensif, kontrol anggaran bulanan, dan analitik keuangan interaktif.",
     bannerImg: "https://lh3.googleusercontent.com/aida/AP1WRLtblHp3KKWl-375Xiyc5VOsddtGK1_jvNiowISZG24xcbgzRBq-SldDR1XEwSo6d2UGMk6i5pALKfxhwf5ZgZMmSwCcPjFCa0u8Y19PA1tNNHrxihWV4-bYv8AeYYf-SJgD4_oJK45UovuRUtefEKCucEvQcn2wr7q21LoxmNhhA7nmgptLXbzy-ywcecpK8WuKFKU-FFgMNj9j-aHSxEdZzmrdyAA87j2bO53mOqzUA3C4ilnGgZlePQ",
-    role: "UI Designer & Developer",
-    timeline: "4 Months",
-    category: "Web Application",
-    description: "Centrepoint serves as the primary system of record for operational data.",
-    overview: "Centrepoint serves as the primary system of record for operational data. The project required redesigning complex data tables and filtering mechanisms into user-friendly layouts.",
-    overviewExtra: "With responsive graphs, PDF report generation, and multi-tenant authorization rules, it dramatically reduced the monthly reporting time for department heads.",
+    role: "Frontend Developer",
+    timeline: "2 Months",
+    category: "Mobile App",
+    description: "Ticzy is a comprehensive personal expense planner.",
+    overview: "Ticzy helps individuals gain complete transparency over their spending behaviors. It offers automated grouping, dynamic progress bars, and localized recurring targets tracking.",
+    overviewExtra: "Built using Flutter and Firebase, the client app synchronizes transactions seamlessly and supports responsive charts, offline bookkeeping features, and monthly reports output.",
     gallery: [
       "https://lh3.googleusercontent.com/aida/AP1WRLtblHp3KKWl-375Xiyc5VOsddtGK1_jvNiowISZG24xcbgzRBq-SldDR1XEwSo6d2UGMk6i5pALKfxhwf5ZgZMmSwCcPjFCa0u8Y19PA1tNNHrxihWV4-bYv8AeYYf-SJgD4_oJK45UovuRUtefEKCucEvQcn2wr7q21LoxmNhhA7nmgptLXbzy-ywcecpK8WuKFKU-FFgMNj9j-aHSxEdZzmrdyAA87j2bO53mOqzUA3C4ilnGgZlePQ",
       "https://lh3.googleusercontent.com/aida/AP1WRLu79PxdsPbCAUTSTrVaUN9NDKNwM8bD2XUfTT7rFiQ_s6shIcEHnhBkvRp4cXrCiHfQHV8izZK3imd9ZHXmimiQP889Nd7EhMLDDBVPDPtHvFgGcfWy4n2K0aFeUVhLA6ggIlTotymClP882TD3HjQpE_PtEF60tOIYeqF4xma_T2ug3wkOWcOPp-_Nmd9XtTUOQcGIQHvQgKtUxngG1uE9jP4MRBz2fKTkAWZsw_orLeWe7zqmA1ayd_0"
     ]
   },
-  "ukm-policy": {
-    id: "ukm-policy",
-    title: "UKM-POLICY",
-    subtitle: "Information portal for campus student organizations and policy tracking, focusing on transparency and accessibility.",
+  "parzello-website": {
+    id: "parzello-website",
+    title: "PARZELLO WEBSITE",
+    subtitle: "Official Agency Platform. Situs web resmi untuk agensi digital Parzello yang menampilkan desain UI yang modern dan bersih.",
     bannerImg: "https://lh3.googleusercontent.com/aida/AP1WRLtFpshICmSPLIt2vs_np5Kv756JOaZWixkDnMNmtYzjQVFIE9lOtfqNnTSoj1igqBNAb8lGS00XOYGk_kA0MqyFSA_xyFJV5C7tvjOwMwmAW03o0JFsdwPDiBfZoq_24ebSL07ViAXz0maWVzBP6XrVSuMR_SYikdVF1TBTisVrO28u8yyxpWZb98nqQLjiI9R0ocT-rnsdNCHr3DDsv-3pyiE7VXRw48H41vvh7nkFk7c5n_UJUE3xlzQ",
-    role: "Lead Developer",
+    role: "Frontend Engineer",
     timeline: "1 Month",
-    category: "Web Portal",
-    description: "UKM-POLICY brings administrative clarity to campus organizations.",
-    overview: "UKM-POLICY brings administrative clarity to campus organizations. Students can view student codes, organization policies, and check tracking status of proposed initiatives.",
-    overviewExtra: "Featuring robust search features, dynamic PDF rendering of regulations, and accessible navigation designed to assist student senators.",
+    category: "Web Platform",
+    description: "Official portal built for the digital agency Parzello.",
+    overview: "This official corporate landing page presents the digital agency's services, team, and contact channels. It features strict responsive grids, modern layouts, and premium graphics overlays.",
+    overviewExtra: "Constructed with Next.js and Tailwind CSS, it maximizes page loading speeds and implements smooth micro-animations to improve visitor engagement.",
     gallery: [
       "https://lh3.googleusercontent.com/aida/AP1WRLtFpshICmSPLIt2vs_np5Kv756JOaZWixkDnMNmtYzjQVFIE9lOtfqNnTSoj1igqBNAb8lGS00XOYGk_kA0MqyFSA_xyFJV5C7tvjOwMwmAW03o0JFsdwPDiBfZoq_24ebSL07ViAXz0maWVzBP6XrVSuMR_SYikdVF1TBTisVrO28u8yyxpWZb98nqQLjiI9R0ocT-rnsdNCHr3DDsv-3pyiE7VXRw48H41vvh7nkFk7c5n_UJUE3xlzQ",
       "https://lh3.googleusercontent.com/aida/AP1WRLuA_9XVbH-lxZXKsstA_R7ovBsGkzPgd9OL1n8YG2nAfpGStIVaOYTDwRpPydIZv-mE-ZZNHt7rzml4aMPRvYaHnZOFeJ5E2rKIRmFa-cwJS6iRGeEqaUdofKg_tEaomiFXIiyfcp-3trtWLJSi_t1rIdaeJN_QlB4MWg4m1Z7ehAJ0SobzCxE_aVLurffvAa4eTg3U2pdAFlVfLAAbrZyOBxFCln9rktf9-s-KZMl6jke3Yi5NvF4XG6w"
     ]
   },
-  "e-konsul": {
-    id: "e-konsul",
-    title: "E-KONSUL",
-    subtitle: "Online consultation booking system connecting professionals with clients in real-time.",
+  "ukm-policy": {
+    id: "ukm-policy",
+    title: "UKM POLICY WEBSITE",
+    subtitle: "Community Portal. Situs web responsif resmi untuk Unit Kegiatan Mahasiswa Politeknik Linux Community dengan manajemen konten dinamis.",
     bannerImg: "https://lh3.googleusercontent.com/aida/AP1WRLsNEtM_Mvk_AxigSlzpFpkGUG93FgdQLQXh74wlRJSi4HxwPYwldmSPSzyJK98RKH7ZO9GgFIPklIeTohW--1g5QcVt1P6gTqyj8vZjaMSJJqKZytlG_ZC4SB_-2ZTGLVUBa_cEFsBAkGaSjEry7wYkShmF0VIQbnZG70_5fjTcWrSLWaYH4Rd-REv6Z8nMz2dbbq9-deHAQEK35WqTiAc22aCo-AeHv14p8bMsEffZsXauSTRwg4x6WMA",
-    role: "Mobile Developer",
-    timeline: "2.5 Months",
-    category: "Mobile App",
-    description: "E-Konsul bridges the communication gap between experts and consumers.",
-    overview: "E-Konsul bridges the communication gap between experts and consumers, offering chat channels, video bookings, and electronic invoice downloads in-app.",
-    overviewExtra: "Built using Flutter, the application provides smooth animations, localized payments, push notifications, and a responsive offline layout.",
+    role: "Lead Developer",
+    timeline: "2 Months",
+    category: "Web Portal",
+    description: "Official web hub for the UKM POLICY Linux Community.",
+    overview: "UKM Policy Portal is a content management platform designed for the campus Linux Community (UKM POLICY). It offers dynamic posting for news, workshop schedules, and resource links tracking.",
+    overviewExtra: "Using Next.js and Tailwind CSS, we deployed modular editors, server-side content caching, and responsive navigation for mobile student access.",
     gallery: [
       "https://lh3.googleusercontent.com/aida/AP1WRLsNEtM_Mvk_AxigSlzpFpkGUG93FgdQLQXh74wlRJSi4HxwPYwldmSPSzyJK98RKH7ZO9GgFIPklIeTohW--1g5QcVt1P6gTqyj8vZjaMSJJqKZytlG_ZC4SB_-2ZTGLVUBa_cEFsBAkGaSjEry7wYkShmF0VIQbnZG70_5fjTcWrSLWaYH4Rd-REv6Z8nMz2dbbq9-deHAQEK35WqTiAc22aCo-AeHv14p8bMsEffZsXauSTRwg4x6WMA",
       "https://lh3.googleusercontent.com/aida/AP1WRLuVKhSW7Z4Z2GsnXg-E5a6dtPQbtfPZTRz4LENN4RQpH_yNbomWzX1Pa9JtleEQy3ikCqgldYBi2ggJfyaBQ0_CaOAjyjFbn0cbw-cSWB4rqQl9SiAmFVXTbd8RlruwkYGtwtLrj8tPhiy83HmTI7iifpKkBk_i1WZ3-Vm0Vy6RsL90aqrbp0mCVpLlA9GrlkOaltmoFgUXPQEut0vYsyrQPdj_6FHeNKcJCzlDIP0WrzhCZfryqRHMJw"
     ]
   },
-  "personal-portfolio-v1": {
-    id: "personal-portfolio-v1",
-    title: "PORTFOLIO V1",
-    subtitle: "Previous iteration of my personal developer portfolio, exploring traditional layout styling.",
+  centrepoint: {
+    id: "centrepoint",
+    title: "CENTREPOINT",
+    subtitle: "Community App. Aplikasi manajemen komunitas untuk organisasi POLICY di Politeknik Negeri Lhokseumawe.",
     bannerImg: "https://lh3.googleusercontent.com/aida/AP1WRLvMHEgaQs3ZteyM36Mkg-4m-5Mw_fLt1Qyb8c6S9c3vXvr9E7b-8kGeW2wdrWG-r3PioOblLSnoPj07cafKwN8xJDCbBbmvXcJryS-kcKR2TjWnSLYXvxqmbP7X24hHDJslkMWYm8T2EBsTR9cfaOPudqvsjOii6wZ394eqHaUH-U8kzAwnj0UUy4y2ONcA_CiLEZ84ZGrUaL0mAj6uEYx455Sm96i1A5Y85rsaTcP0GxvJuUNyz6dtfSs",
-    role: "Designer & Developer",
-    timeline: "2 Weeks",
-    category: "Web Design",
-    description: "My original portfolio served as a playground for custom layout designs.",
-    overview: "My original portfolio served as a playground for custom layout designs, showcasing my early achievements and responsive grids.",
-    overviewExtra: "Although styled with classic HTML/CSS, it was critical to lay down the initial designs and learn the core typography hierarchies that evolved into my current portfolio.",
+    role: "Mobile Developer",
+    timeline: "3 Months",
+    category: "Mobile App",
+    description: "Community management app built for POLICY organization.",
+    overview: "Centrepoint coordinates student operations and forums for the POLICY student organization at Politeknik Negeri Lhokseumawe. It offers real-time announcements, RSVP schedules, and group files repository.",
+    overviewExtra: "Constructed with Flutter and Firebase, it maintains local storage capabilities for offline messaging and updates student feeds dynamically.",
     gallery: [
       "https://lh3.googleusercontent.com/aida/AP1WRLvMHEgaQs3ZteyM36Mkg-4m-5Mw_fLt1Qyb8c6S9c3vXvr9E7b-8kGeW2wdrWG-r3PioOblLSnoPj07cafKwN8xJDCbBbmvXcJryS-kcKR2TjWnSLYXvxqmbP7X24hHDJslkMWYm8T2EBsTR9cfaOPudqvsjOii6wZ394eqHaUH-U8kzAwnj0UUy4y2ONcA_CiLEZ84ZGrUaL0mAj6uEYx455Sm96i1A5Y85rsaTcP0GxvJuUNyz6dtfSs",
       "https://lh3.googleusercontent.com/aida/AP1WRLu79PxdsPbCAUTSTrVaUN9NDKNwM8bD2XUfTT7rFiQ_s6shIcEHnhBkvRp4cXrCiHfQHV8izZK3imd9ZHXmimiQP889Nd7EhMLDDBVPDPtHvFgGcfWy4n2K0aFeUVhLA6ggIlTotymClP882TD3HjQpE_PtEF60tOIYeqF4xma_T2ug3wkOWcOPp-_Nmd9XtTUOQcGIQHvQgKtUxngG1uE9jP4MRBz2fKTkAWZsw_orLeWe7zqmA1ayd_0"
@@ -431,7 +431,7 @@ export default function ProjectDetailPage({ params }: { params: Promise<{ slug: 
             <div className="md:col-span-5 flex flex-col gap-6 justify-center h-full">
               <a
                 className="bg-white border-4 border-black p-6 neo-shadow-lg active-push-lg flex flex-col gap-2 group hover:bg-secondary-fixed transition-colors"
-                href="mailto:mkholis812@gmail.com"
+                href="mailto:parzivalxdd@gmail.com"
               >
                 <div className="flex items-center justify-between">
                   <span className="material-symbols-outlined text-4xl font-black">mail</span>
@@ -439,13 +439,13 @@ export default function ProjectDetailPage({ params }: { params: Promise<{ slug: 
                     arrow_forward
                   </span>
                 </div>
-                <span className="font-display text-headline-md uppercase break-words">mkholis812@gmail.com</span>
+                <span className="font-display text-headline-md uppercase break-words">parzivalxdd@gmail.com</span>
               </a>
 
               <div className="grid grid-cols-2 gap-4">
                 <a
                   className="bg-secondary-fixed border-4 border-black p-4 neo-shadow active-push flex items-center justify-center font-display text-label-bold uppercase hover:bg-white transition-colors text-center"
-                  href="https://linkedin.com/in/muhammad-kholis-63625b248"
+                  href="https://linkedin.com/in/muhammad-kholis-51ba57195"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -453,7 +453,7 @@ export default function ProjectDetailPage({ params }: { params: Promise<{ slug: 
                 </a>
                 <a
                   className="bg-black border-4 border-black p-4 neo-shadow active-push flex items-center justify-center font-display text-label-bold uppercase text-white hover:bg-tertiary-fixed hover:text-black transition-colors text-center"
-                  href="https://github.com/mhmmdkholis"
+                  href="https://github.com/TissuGalon"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

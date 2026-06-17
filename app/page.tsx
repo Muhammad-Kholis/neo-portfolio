@@ -26,61 +26,61 @@ export default function Page() {
       id: "zellopos",
       num: "01",
       title: "ZelloPOS",
-      description: "Point of Sale application built for retail businesses, focusing on transaction speed and inventory management.",
-      tags: ["Flutter", "Firebase"],
+      description: "Sistem Point of Sale (POS) lintas platform yang dirancang untuk UMKM, menampilkan pelacakan inventaris waktu nyata, pemrosesan transaksi yang aman, serta sinkronisasi multi-platform terpadu.",
+      tags: ["Flutter", "Next.js", "Supabase"],
       tagBg: "bg-primary-container",
       img: "https://lh3.googleusercontent.com/aida/AP1WRLuNQGLd2JU26AlXLNp1hUzIannmzguPVgZoozKH4vk_7QmImVM-0nWn-cFsUZ-7KGX73cubz0BnliDgnlOEnWoVhH45ZuDkbL3tpx6fI5LI8hy8bs0x5j-3BdJvDrlsGeLWfGNg8iLX6bxd37AOWpy2JnLcov6WUjlVFO730_m2RkHMNHiYf6DfsFqer5-Afz3qrE-ZYFDek61sFHR8IagGN5hxhftuTMGTIEifrJFloBinGMolzPuvK2c",
       category: "Mobile",
     },
     {
-      id: "webparzello",
+      id: "erp-pt-semadam",
       num: "02",
-      title: "WebParzello",
-      description: "A comprehensive web platform for logistics tracking and parcel management.",
-      tags: ["Next.js", "Tailwind"],
+      title: "ERP PT Semadam",
+      description: "Sistem web Enterprise Resource Planning (ERP) untuk PT Semadam guna menyederhanakan operasional bisnis inti, menampilkan modul terintegrasi untuk inventaris, transaksi, dan pelaporan.",
+      tags: ["Next.js", "Supabase"],
       tagBg: "bg-secondary-container",
       img: "https://lh3.googleusercontent.com/aida/AP1WRLvjfaAo5V9siHBVodQCtlIS6n4wcjQi8lWRnptAJvjo83z0YXoImscTAjSmXtp0OmD_xAHfZQTvYyj8cSYmDPneemGiutXZR5AwIkaWcoABwsqS7zHyCT-kidR6ntNwGUo1u1DbskIt_NrThksOlJt84gQT38Csx1E1fieFIyOiqrcgCEglDrB_FUcCDp4NlJg10vBrkL3eVM7dE7zwc5V6MJtRoHC0yFUGfAnnAvJx6pRr6V6o_wSl8ws",
       category: "Web",
     },
     {
-      id: "centrepoint",
+      id: "ticzy",
       num: "03",
-      title: "Centrepoint",
-      description: "Enterprise management system dashboard providing key business metrics.",
-      tags: ["React"],
+      title: "Ticzy",
+      description: "Aplikasi money tracker pribadi yang dilengkapi dengan pencatatan transaksi komprehensif, kontrol anggaran bulanan, dan analitik keuangan interaktif.",
+      tags: ["Flutter", "Firebase"],
       tagBg: "bg-primary-fixed",
       img: "https://lh3.googleusercontent.com/aida/AP1WRLtblHp3KKWl-375Xiyc5VOsddtGK1_jvNiowISZG24xcbgzRBq-SldDR1XEwSo6d2UGMk6i5pALKfxhwf5ZgZMmSwCcPjFCa0u8Y19PA1tNNHrxihWV4-bYv8AeYYf-SJgD4_oJK45UovuRUtefEKCucEvQcn2wr7q21LoxmNhhA7nmgptLXbzy-ywcecpK8WuKFKU-FFgMNj9j-aHSxEdZzmrdyAA87j2bO53mOqzUA3C4ilnGgZlePQ",
-      category: "Web",
+      category: "Mobile",
     },
     {
-      id: "ukm-policy",
+      id: "parzello-website",
       num: "04",
-      title: "UKM-POLICY",
-      description: "Information portal for campus student organizations and policy tracking.",
-      tags: ["Web"],
+      title: "Parzello Website",
+      description: "Situs web resmi untuk agensi digital Parzello yang menampilkan desain UI yang modern dan bersih.",
+      tags: ["Next.js", "Tailwind CSS"],
       tagBg: "bg-surface",
       img: "https://lh3.googleusercontent.com/aida/AP1WRLtFpshICmSPLIt2vs_np5Kv756JOaZWixkDnMNmtYzjQVFIE9lOtfqNnTSoj1igqBNAb8lGS00XOYGk_kA0MqyFSA_xyFJV5C7tvjOwMwmAW03o0JFsdwPDiBfZoq_24ebSL07ViAXz0maWVzBP6XrVSuMR_SYikdVF1TBTisVrO28u8yyxpWZb98nqQLjiI9R0ocT-rnsdNCHr3DDsv-3pyiE7VXRw48H41vvh7nkFk7c5n_UJUE3xlzQ",
       category: "Web",
     },
     {
-      id: "e-konsul",
+      id: "ukm-policy",
       num: "05",
-      title: "E-Konsul",
-      description: "Online consultation booking system connecting professionals with clients.",
-      tags: ["Flutter"],
+      title: "UKM Policy Website",
+      description: "Situs web responsif resmi untuk Unit Kegiatan Mahasiswa Politeknik Linux Community dengan manajemen konten dinamis.",
+      tags: ["Next.js", "Tailwind CSS"],
       tagBg: "bg-primary-container",
       img: "https://lh3.googleusercontent.com/aida/AP1WRLsNEtM_Mvk_AxigSlzpFpkGUG93FgdQLQXh74wlRJSi4HxwPYwldmSPSzyJK98RKH7ZO9GgFIPklIeTohW--1g5QcVt1P6gTqyj8vZjaMSJJqKZytlG_ZC4SB_-2ZTGLVUBa_cEFsBAkGaSjEry7wYkShmF0VIQbnZG70_5fjTcWrSLWaYH4Rd-REv6Z8nMz2dbbq9-deHAQEK35WqTiAc22aCo-AeHv14p8bMsEffZsXauSTRwg4x6WMA",
-      category: "Mobile",
+      category: "Web",
     },
     {
-      id: "personal-portfolio-v1",
+      id: "centrepoint",
       num: "06",
-      title: "Personal Portfolio V1",
-      description: "Previous iteration of my personal developer portfolio.",
-      tags: ["HTML/CSS"],
+      title: "Centrepoint",
+      description: "Aplikasi manajemen komunitas untuk organisasi POLICY di Politeknik Negeri Lhokseumawe.",
+      tags: ["Flutter", "Firebase"],
       tagBg: "bg-white",
       img: "https://lh3.googleusercontent.com/aida/AP1WRLvMHEgaQs3ZteyM36Mkg-4m-5Mw_fLt1Qyb8c6S9c3vXvr9E7b-8kGeW2wdrWG-r3PioOblLSnoPj07cafKwN8xJDCbBbmvXcJryS-kcKR2TjWnSLYXvxqmbP7X24hHDJslkMWYm8T2EBsTR9cfaOPudqvsjOii6wZ394eqHaUH-U8kzAwnj0UUy4y2ONcA_CiLEZ84ZGrUaL0mAj6uEYx455Sm96i1A5Y85rsaTcP0GxvJuUNyz6dtfSs",
-      category: "Web",
+      category: "Mobile",
     },
   ]
 
@@ -386,7 +386,7 @@ export default function Page() {
                     <span className="font-bold">Role:</span> Informatics Student
                   </li>
                   <li>
-                    <span className="font-bold">Location:</span> Lhokseumawe
+                    <span className="font-bold">Location:</span> Langsa, Indonesia
                   </li>
                   <li>
                     <span className="font-bold">Focus:</span> Frontend & Mobile
@@ -411,13 +411,10 @@ export default function Page() {
 
               <div className="font-display text-body-lg text-on-surface-variant flex flex-col gap-6 text-xl relative z-10">
                 <p className="bg-surface-container p-4 border-l-8 border-secondary-fixed neo-shadow-sm">
-                  I am an independent and motivated developer with an interest in Front End and Mobile app Development.
-                  In recent years, I have built skills mainly related to web design, application interface design, and
-                  front-end development.
+                  Saya adalah mahasiswa tingkat akhir Teknik Informatika di Politeknik Negeri Lhokseumawe dengan pengalaman praktis dalam membangun aplikasi web dan mobile sejak tahun 2022.
                 </p>
                 <p className="bg-surface-container p-4 border-l-8 border-vibrant-orange neo-shadow-sm">
-                  I am currently a student at Politeknik Negeri Lhokseumawe, constantly exploring new technologies to
-                  build robust and scalable systems.
+                  Menguasai Flutter, Next.js, React, Firebase, dan Supabase. Memiliki antusiasme tinggi dalam merancang antarmuka pengguna yang bersih dan menghadirkan solusi digital yang berdampak melalui proyek lepas (freelance) serta pengalaman magang.
                 </p>
               </div>
               <div className="h-4 w-full bg-vibrant-orange border-3 border-border-dark mt-8 neo-shadow"></div>
@@ -523,7 +520,7 @@ export default function Page() {
                   Politeknik Negeri Lhokseumawe
                 </h3>
                 <p className="font-display text-body-md text-black mt-2 font-bold bg-secondary-fixed border-2 border-black p-1 inline-block">
-                  D4 - Teknik Informatika (TI)
+                  Teknik Informatika (IPK: 3.53)
                 </p>
               </div>
               <div className="border-t-4 border-border-dark pt-4 mt-auto border-dashed">
@@ -531,7 +528,7 @@ export default function Page() {
                   SMK Negeri 2 Kota Langsa
                 </h3>
                 <p className="font-display text-body-md text-black font-bold bg-tertiary-fixed border-2 border-black p-1 inline-block mt-1">
-                  Teknik Komputer dan Jaringan
+                  Rekayasa Perangkat Lunak (84.81)
                 </p>
               </div>
             </div>
@@ -563,13 +560,13 @@ export default function Page() {
                   Dart
                 </span>
                 <span className="bg-tertiary-fixed border-3 border-border-dark px-5 py-3 font-display text-label-bold uppercase neo-shadow hover:-translate-y-1 transition-transform text-lg text-black">
-                  Tailwind CSS
+                  Supabase
                 </span>
                 <span className="bg-error-container border-3 border-border-dark px-5 py-3 font-display text-label-bold uppercase neo-shadow hover:-translate-y-1 transition-transform text-lg text-black">
                   Firebase
                 </span>
                 <span className="bg-primary-container border-3 border-border-dark px-5 py-3 font-display text-label-bold uppercase neo-shadow hover:-translate-y-1 transition-transform text-lg text-black">
-                  MySQL
+                  PostgreSQL
                 </span>
                 <span className="bg-black text-white border-3 border-border-dark px-5 py-3 font-display text-label-bold uppercase neo-shadow hover:-translate-y-1 transition-transform text-lg">
                   Git
@@ -749,8 +746,7 @@ export default function Page() {
                 <div className="p-6 flex flex-col flex-grow">
                   <h3 className="font-display text-headline-md mb-2 uppercase">Hackathon KMIPN VI</h3>
                   <p className="font-display text-body-md text-on-surface-variant mb-4 flex-grow">
-                    Finalist at Politeknik Negeri Jakarta (2024). Developed innovative solutions under high-pressure
-                    competition environments.
+                    Finalist dalam Kompetisi Mahasiswa Informatika Politeknik Nasional (KMIPN) VI di Politeknik Negeri Jakarta (2024).
                   </p>
                   <div className="mt-auto">
                     <span className="bg-secondary-fixed border-2 border-black px-3 py-1 text-xs font-bold uppercase">
@@ -778,12 +774,11 @@ export default function Page() {
                 <div className="p-6 flex flex-col flex-grow">
                   <h3 className="font-display text-headline-md mb-2 uppercase">Komit PNL</h3>
                   <p className="font-display text-body-md text-on-surface-variant mb-4 flex-grow">
-                    Actively involved in organizing tech events and fostering the local developer community at PNL
-                    through workshops and meetups.
+                    Anggota Divisi Digihub - Komit PNL. Merancang aset visual kreatif dan materi publikasi digital berkualitas tinggi.
                   </p>
                   <div className="mt-auto">
                     <span className="bg-secondary-fixed border-2 border-black px-3 py-1 text-xs font-bold uppercase">
-                      2023 // Organizer
+                      2024 - 2025 // Anggota
                     </span>
                   </div>
                 </div>
@@ -807,12 +802,11 @@ export default function Page() {
                 <div className="p-6 flex flex-col flex-grow">
                   <h3 className="font-display text-headline-md mb-2 uppercase">UKM POLICY</h3>
                   <p className="font-display text-body-md text-on-surface-variant mb-4 flex-grow">
-                    Member of the Polytechnic Linux Community, contributing to open-source advocacy and technical
-                    workshops for students.
+                    Ketua Bidang Pemrograman - UKM POLICY (Linux Community). Mengembangkan aplikasi dan pemeliharaan website organisasi.
                   </p>
                   <div className="mt-auto">
                     <span className="bg-secondary-fixed border-2 border-black px-3 py-1 text-xs font-bold uppercase">
-                      2023 // Member
+                      2023 - 2024 // Ketua Bidang
                     </span>
                   </div>
                 </div>
@@ -835,11 +829,10 @@ export default function Page() {
                 Achievement
               </div>
               <h2 className="font-display text-headline-lg-mobile md:text-display text-black mb-6 uppercase bg-white border-4 border-black p-4 inline-block transform rotate-1">
-                KMIPN VI Finalist
+                KMIPN VI & UI/UX Finalist
               </h2>
               <p className="font-display text-body-lg text-black font-medium mb-10 border-l-8 border-black pl-6 bg-white p-6 neo-shadow">
-                Competed and reached the finals at the Kompetisi Mahasiswa Informatika Politeknik Nasional (KMIPN) VI,
-                showcasing technical problem-solving and innovation among top polytechnic students nationwide.
+                Finalis tingkat nasional pada kompetisi Hackathon KMIPN VI (Politeknik Negeri Jakarta) & Finalis UI/UX Computer Multi-Challenge Day 2025 (Universitas Syiah Kuala).
               </p>
             </div>
             <div className="relative h-64 md:h-auto p-4 bg-white flex items-center justify-center">
@@ -877,7 +870,7 @@ export default function Page() {
             <div className="md:col-span-5 flex flex-col gap-6 justify-center h-full">
               <a
                 className="bg-white border-4 border-black p-6 neo-shadow-lg active-push-lg flex flex-col gap-2 group hover:bg-secondary-fixed transition-colors"
-                href="mailto:mkholis812@gmail.com"
+                href="mailto:parzivalxdd@gmail.com"
               >
                 <div className="flex items-center justify-between">
                   <span className="material-symbols-outlined text-4xl font-black">mail</span>
@@ -885,13 +878,13 @@ export default function Page() {
                     arrow_forward
                   </span>
                 </div>
-                <span className="font-display text-headline-md uppercase break-words">mkholis812@gmail.com</span>
+                <span className="font-display text-headline-md uppercase break-words">parzivalxdd@gmail.com</span>
               </a>
 
               <div className="grid grid-cols-2 gap-4">
                 <a
                   className="bg-secondary-fixed border-4 border-black p-4 neo-shadow active-push flex items-center justify-center font-display text-label-bold uppercase hover:bg-white transition-colors text-center"
-                  href="https://linkedin.com/in/muhammad-kholis-63625b248"
+                  href="https://linkedin.com/in/muhammad-kholis-51ba57195"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -899,7 +892,7 @@ export default function Page() {
                 </a>
                 <a
                   className="bg-black border-4 border-black p-4 neo-shadow active-push flex items-center justify-center font-display text-label-bold uppercase text-white hover:bg-tertiary-fixed hover:text-black transition-colors text-center"
-                  href="https://github.com/mhmmdkholis"
+                  href="https://github.com/TissuGalon"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
