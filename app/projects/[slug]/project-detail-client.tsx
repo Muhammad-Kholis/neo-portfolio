@@ -253,7 +253,7 @@ export default function ProjectDetailClient({ project }: ProjectDetailClientProp
             <div className="w-full mt-6 border-4 border-border-dark neo-shadow-lg bg-background p-2">
               <img
                 alt={`${project.title} Dashboard Interface Preview`}
-                className="w-full h-auto object-cover border-2 border-border-dark grayscale hover:grayscale-0 transition-all duration-500"
+                className="w-full h-auto object-cover border-2 border-border-dark"
                 src={project.cover}
               />
             </div>
@@ -308,7 +308,7 @@ export default function ProjectDetailClient({ project }: ProjectDetailClientProp
                     >
                       <img
                         alt={`${project.title} gallery screenshot ${i + 1}`}
-                        className="w-full h-auto object-cover border-2 border-border-dark grayscale hover:grayscale-0 transition-all duration-500"
+                        className="w-full h-auto object-cover border-2 border-border-dark"
                         src={imgUrl}
                       />
                     </div>

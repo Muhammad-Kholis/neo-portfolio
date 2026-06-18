@@ -344,8 +344,8 @@ export default function HomeClient({ projects }: HomeClientProps) {
             <div className="absolute inset-0 bg-vibrant-orange border-4 border-border-dark translate-x-8 translate-y-8 group-hover:translate-x-10 group-hover:translate-y-10 transition-transform"></div>
             <div className="absolute inset-0 bg-primary-fixed border-4 border-border-dark translate-x-4 translate-y-4 group-hover:translate-x-5 group-hover:translate-y-5 transition-transform"></div>
             <img
-              className="relative z-10 w-full max-w-md border-4 border-border-dark bg-background object-cover grayscale hover:grayscale-0 transition-all duration-500"
-              src="/images/muhammadkholis.webp"
+              className="relative z-10 w-full max-w-md border-4 border-border-dark bg-background object-cover"
+              src="/images/muhammadkholis2.webp"
               alt="Muhammad Kholis Profile Photo"
               style={{ aspectRatio: "1/1" }}
             />
@@ -455,16 +455,17 @@ export default function HomeClient({ projects }: HomeClientProps) {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-6 auto-rows-[300px]">
+        {/* Desktop Grid Layout */}
+        <div className="hidden md:grid grid-cols-12 gap-6 auto-rows-[300px]">
           <div className="md:col-span-8 relative group">
             <div className="absolute inset-0 bg-primary-fixed border-4 border-border-dark translate-x-4 translate-y-4"></div>
             <div className="relative h-full bg-surface-container-lowest border-4 border-border-dark overflow-hidden hover:-translate-y-1 transition-transform">
               <img
-                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                className="w-full h-full object-cover"
                 src="/images/muhammadkholis_ui_.webp"
                 alt="Workflow visual archive"
               />
-              <div className="absolute top-4 left-4 bg-secondary-fixed border-2 border-border-dark px-3 py-1 text-sm font-black uppercase neo-shadow transform -rotate-3 text-on-surface">
+              <div className="absolute top-4 left-4 bg-secondary-fixed border-2 border-border-dark px-3 py-1 text-sm font-black uppercase neo-shadow transform -rotate-3 text-black">
                 Workflow
               </div>
             </div>
@@ -474,11 +475,11 @@ export default function HomeClient({ projects }: HomeClientProps) {
             <div className="absolute inset-0 bg-secondary-fixed border-4 border-border-dark translate-x-4 translate-y-4"></div>
             <div className="relative h-full bg-surface-container-lowest border-4 border-border-dark overflow-hidden hover:-translate-y-1 transition-transform">
               <img
-                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                className="w-full h-full object-cover"
                 src="/images/muhammadkholis2.webp"
                 alt="Behind the scenes visual archive"
               />
-              <div className="absolute bottom-4 right-4 bg-vibrant-orange border-2 border-border-dark px-3 py-1 text-sm font-black uppercase neo-shadow transform rotate-6 text-on-surface">
+              <div className="absolute bottom-4 right-4 bg-vibrant-orange border-2 border-border-dark px-3 py-1 text-sm font-black uppercase neo-shadow transform rotate-6 text-black">
                 BTS
               </div>
             </div>
@@ -488,7 +489,7 @@ export default function HomeClient({ projects }: HomeClientProps) {
             <div className="absolute inset-0 bg-tertiary-fixed border-4 border-border-dark translate-x-4 translate-y-4"></div>
             <div className="relative h-full bg-surface-container-lowest border-4 border-border-dark overflow-hidden hover:-translate-y-1 transition-transform">
               <img
-                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                className="w-full h-full object-cover"
                 src="/images/muhammadkholis.webp"
                 alt="Moments visual archive"
               />
@@ -502,11 +503,74 @@ export default function HomeClient({ projects }: HomeClientProps) {
             <div className="absolute inset-0 bg-vibrant-orange border-4 border-border-dark translate-x-4 translate-y-4"></div>
             <div className="relative h-full bg-surface-container-lowest border-4 border-border-dark overflow-hidden hover:-translate-y-1 transition-transform">
               <img
-                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                className="w-full h-full object-cover"
                 src="/images/muhammadkholis2.webp"
                 alt="Process visual archive"
               />
-              <div className="absolute bottom-4 left-4 bg-secondary-container border-2 border-border-dark px-3 py-1 text-sm font-black uppercase neo-shadow transform -rotate-2 text-on-surface-variant">
+              <div className="absolute bottom-4 left-4 bg-secondary-fixed border-2 border-border-dark px-3 py-1 text-sm font-black uppercase neo-shadow transform -rotate-2 text-black">
+                Process
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Mobile Carousel Layout */}
+        <div className="flex md:hidden overflow-x-auto gap-6 pb-6 snap-x snap-mandatory no-scrollbar">
+          {/* Slide 1 */}
+          <div className="snap-center shrink-0 w-[85%] relative group">
+            <div className="absolute inset-0 bg-primary-fixed border-4 border-border-dark translate-x-3 translate-y-3"></div>
+            <div className="relative h-[250px] bg-surface-container-lowest border-4 border-border-dark overflow-hidden">
+              <img
+                className="w-full h-full object-cover"
+                src="/images/muhammadkholis_ui_.webp"
+                alt="Workflow visual archive"
+              />
+              <div className="absolute top-4 left-4 bg-secondary-fixed border-2 border-border-dark px-3 py-1 text-sm font-black uppercase neo-shadow transform -rotate-3 text-black">
+                Workflow
+              </div>
+            </div>
+          </div>
+
+          {/* Slide 2 */}
+          <div className="snap-center shrink-0 w-[85%] relative group">
+            <div className="absolute inset-0 bg-secondary-fixed border-4 border-border-dark translate-x-3 translate-y-3"></div>
+            <div className="relative h-[250px] bg-surface-container-lowest border-4 border-border-dark overflow-hidden">
+              <img
+                className="w-full h-full object-cover"
+                src="/images/muhammadkholis2.webp"
+                alt="Behind the scenes visual archive"
+              />
+              <div className="absolute bottom-4 right-4 bg-vibrant-orange border-2 border-border-dark px-3 py-1 text-sm font-black uppercase neo-shadow transform rotate-6 text-black">
+                BTS
+              </div>
+            </div>
+          </div>
+
+          {/* Slide 3 */}
+          <div className="snap-center shrink-0 w-[85%] relative group">
+            <div className="absolute inset-0 bg-tertiary-fixed border-4 border-border-dark translate-x-3 translate-y-3"></div>
+            <div className="relative h-[250px] bg-surface-container-lowest border-4 border-border-dark overflow-hidden">
+              <img
+                className="w-full h-full object-cover"
+                src="/images/muhammadkholis.webp"
+                alt="Moments visual archive"
+              />
+              <div className="absolute top-4 right-4 bg-primary-container border-2 border-border-dark px-3 py-1 text-sm font-black uppercase neo-shadow transform rotate-2 text-on-primary-container">
+                Moments
+              </div>
+            </div>
+          </div>
+
+          {/* Slide 4 */}
+          <div className="snap-center shrink-0 w-[85%] relative group">
+            <div className="absolute inset-0 bg-vibrant-orange border-4 border-border-dark translate-x-3 translate-y-3"></div>
+            <div className="relative h-[250px] bg-surface-container-lowest border-4 border-border-dark overflow-hidden">
+              <img
+                className="w-full h-full object-cover"
+                src="/images/muhammadkholis2.webp"
+                alt="Process visual archive"
+              />
+              <div className="absolute bottom-4 left-4 bg-secondary-fixed border-2 border-border-dark px-3 py-1 text-sm font-black uppercase neo-shadow transform -rotate-2 text-black">
                 Process
               </div>
             </div>
@@ -525,11 +589,11 @@ export default function HomeClient({ projects }: HomeClientProps) {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-6 auto-rows-[250px]">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:auto-rows-[280px]">
           {/* Education Card */}
           <div className="md:col-span-5 relative group">
             <div className="absolute inset-0 bg-vibrant-orange border-4 border-border-dark translate-x-4 translate-y-4"></div>
-            <div className="relative h-full bg-background border-4 border-border-dark p-6 flex flex-col justify-between hover:-translate-y-2 hover:-translate-x-2 transition-transform bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAyIiBoZWlnaHQ9IjIwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxjaXJjbGUgY3g9IjIiIGN5PSIyIiByPSIyIiBmaWxsPSIjRTJFMkUyIi8+PC9zdmc+')]">
+            <div className="relative md:h-full bg-background border-4 border-border-dark p-6 flex flex-col justify-between hover:-translate-y-2 hover:-translate-x-2 transition-transform bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAyIiBoZWlnaHQ9IjIwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxjaXJjbGUgY3g9IjIiIGN5PSIyIiByPSIyIiBmaWxsPSIjRTJFMkUyIi8+PC9zdmc+')]">
               <div>
                 <div className="bg-primary-fixed text-black border-3 border-border-dark px-4 py-2 font-display text-label-bold uppercase w-max mb-4 neo-shadow transform -rotate-3 text-lg">
                   Education
@@ -555,7 +619,7 @@ export default function HomeClient({ projects }: HomeClientProps) {
           {/* Tech Stack Card */}
           <div className="md:col-span-7 relative group">
             <div className="absolute inset-0 bg-secondary-fixed border-4 border-border-dark translate-x-4 translate-y-4"></div>
-            <div className="relative h-full bg-[#eedbff] dark:bg-[#2a1b3d] border-4 border-border-dark p-6 overflow-hidden flex flex-col hover:-translate-y-2 hover:-translate-x-2 transition-transform text-black dark:text-white">
+            <div className="relative md:h-full bg-[#eedbff] dark:bg-[#2a1b3d] border-4 border-border-dark p-6 overflow-hidden flex flex-col hover:-translate-y-2 hover:-translate-x-2 transition-transform text-black dark:text-white">
               <div className="absolute top-4 right-4 w-20 h-20 bg-primary-fixed border-4 border-border-dark rounded-full flex items-center justify-center neo-shadow text-center font-bold text-xs transform rotate-12 text-black">
                 TECH
                 <br />
