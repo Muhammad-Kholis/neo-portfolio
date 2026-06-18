@@ -207,7 +207,7 @@ export default function ProjectDetailClient({ project }: ProjectDetailClientProp
             <Link
               onClick={() => setIsMenuOpen(false)}
               href="/#contact"
-              className="w-full bg-primary-fixed border-3 border-border-dark py-3 font-display text-label-bold uppercase text-on-primary-fixed neo-shadow active-push flex items-center justify-center gap-2 text-center text-black"
+              className="w-full bg-primary-fixed border-3 border-border-dark py-3 font-display text-label-bold uppercase text-on-primary-fixed neo-shadow active-push flex items-center justify-center gap-2 text-center"
             >
               <span className="material-symbols-outlined">work</span>
               Hire Me
@@ -222,25 +222,25 @@ export default function ProjectDetailClient({ project }: ProjectDetailClientProp
         <section className="w-full bg-dot-pattern py-16 border-b-4 border-border-dark relative overflow-hidden">
           <div className="max-w-[1280px] mx-auto px-4 md:px-12 flex flex-col items-start gap-10 relative z-10">
             <Link
-              className="inline-flex items-center gap-2 bg-surface border-4 border-border-dark px-4 py-2 font-display text-label-bold text-on-surface hover:bg-primary-container transition-colors neo-shadow active-push text-black"
+              className="inline-flex items-center gap-2 bg-surface border-4 border-border-dark px-4 py-2 font-display text-label-bold text-on-surface hover:bg-primary-container hover:text-on-primary-container transition-colors neo-shadow active-push"
               href="/#work"
             >
               <span className="material-symbols-outlined text-[18px]">arrow_back</span>
               Back to Work
             </Link>
 
-            <h1 className="font-display text-display uppercase text-border-dark break-words leading-none bg-primary-container p-4 border-4 border-border-dark neo-shadow-lg inline-block transform -rotate-1 text-black">
+            <h1 className="font-display text-display uppercase text-border-dark break-words leading-none bg-primary-container p-4 border-4 border-border-dark neo-shadow-lg inline-block transform -rotate-1 text-on-primary-container">
               {project.title}
             </h1>
 
-            <p className="font-display text-body-lg text-on-surface-variant max-w-2xl bg-surface p-4 border-4 border-border-dark neo-shadow text-black">
+            <p className="font-display text-body-lg text-on-surface-variant max-w-2xl bg-surface-container-lowest p-4 border-4 border-border-dark neo-shadow text-on-surface">
               {project.desc}
             </p>
 
             {project.link && (
               <div className="mt-6">
                 <a
-                  className="inline-flex items-center justify-center bg-primary-container text-on-primary-container font-display text-headline-md px-12 py-5 border-4 border-border-dark neo-shadow-lg active-push hover:bg-inverse-primary transition-all uppercase tracking-widest text-black"
+                  className="inline-flex items-center justify-center bg-primary-container text-on-primary-container font-display text-headline-md px-12 py-5 border-4 border-border-dark neo-shadow-lg active-push hover:bg-inverse-primary transition-all uppercase tracking-widest"
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -291,7 +291,7 @@ export default function ProjectDetailClient({ project }: ProjectDetailClientProp
         {project.gallery.length > 0 && (
           <section className="w-full bg-background py-16 border-b-4 border-border-dark">
             <div className="max-w-[1280px] mx-auto px-4 md:px-12">
-              <h2 className="font-display text-headline-lg-mobile md:text-headline-lg text-on-background mb-10 inline-block border-b-4 border-border-dark pb-2 uppercase text-black font-bold">
+              <h2 className="font-display text-headline-lg-mobile md:text-headline-lg text-on-background mb-10 inline-block border-b-4 border-border-dark pb-2 uppercase font-bold">
                 Visual Gallery
               </h2>
 
@@ -319,18 +319,18 @@ export default function ProjectDetailClient({ project }: ProjectDetailClientProp
                   <div className="flex gap-6">
                     <button
                       onClick={() => scrollGallery("left")}
-                      className="bg-primary-container border-4 border-border-dark p-4 flex items-center justify-center neo-shadow active-push text-black"
+                      className="bg-primary-container border-4 border-border-dark p-4 flex items-center justify-center neo-shadow active-push text-on-primary-container"
                     >
                       <span className="material-symbols-outlined font-extrabold">arrow_back</span>
                     </button>
                     <button
                       onClick={() => scrollGallery("right")}
-                      className="bg-primary-container border-4 border-border-dark p-4 flex items-center justify-center neo-shadow active-push text-black"
+                      className="bg-primary-container border-4 border-border-dark p-4 flex items-center justify-center neo-shadow active-push text-on-primary-container"
                     >
                       <span className="material-symbols-outlined font-extrabold">arrow_forward</span>
                     </button>
                   </div>
-                  <div className="font-display text-headline-md text-border-dark bg-surface border-4 border-border-dark px-6 py-2 neo-shadow text-black">
+                  <div className="font-display text-headline-md text-border-dark bg-surface-container-lowest border-4 border-border-dark px-6 py-2 neo-shadow text-on-surface">
                     {String(galleryIndex).padStart(2, "0")} / {String(project.gallery.length).padStart(2, "0")}
                   </div>
                 </div>
@@ -355,15 +355,15 @@ export default function ProjectDetailClient({ project }: ProjectDetailClientProp
                 <br />
                 TOGETHER
               </h2>
-              <div className="absolute -bottom-6 right-4 bg-white border-4 border-black p-4 neo-shadow transform rotate-3 z-20 flex items-center gap-3">
+              <div className="absolute -bottom-6 right-4 bg-surface-container-lowest border-4 border-border-dark p-4 neo-shadow transform rotate-3 z-20 flex items-center gap-3">
                 <div className="w-4 h-4 bg-primary-fixed rounded-full animate-bounce"></div>
-                <span className="font-display text-label-bold uppercase text-black">Available for Freelance</span>
+                <span className="font-display text-label-bold uppercase text-on-surface">Available for Freelance</span>
               </div>
             </div>
 
             <div className="md:col-span-5 flex flex-col gap-6 justify-center h-full">
               <a
-                className="bg-white border-4 border-black p-6 neo-shadow-lg active-push-lg flex flex-col gap-2 group hover:bg-secondary-fixed transition-colors text-black"
+                className="bg-surface-container-lowest border-4 border-border-dark p-6 neo-shadow-lg active-push-lg flex flex-col gap-2 group hover:bg-secondary-fixed transition-colors text-on-surface hover:text-black"
                 href="mailto:parzivalxdd@gmail.com"
               >
                 <div className="flex items-center justify-between">
@@ -372,12 +372,12 @@ export default function ProjectDetailClient({ project }: ProjectDetailClientProp
                     arrow_forward
                   </span>
                 </div>
-                <span className="font-display text-headline-md uppercase break-words text-black">parzivalxdd@gmail.com</span>
+                <span className="font-display text-headline-md uppercase break-words text-on-surface group-hover:text-black transition-colors">parzivalxdd@gmail.com</span>
               </a>
 
               <div className="grid grid-cols-2 gap-4">
                 <a
-                  className="bg-secondary-fixed border-4 border-black p-4 neo-shadow active-push flex items-center justify-center font-display text-label-bold uppercase hover:bg-white transition-colors text-center text-black"
+                  className="bg-secondary-fixed border-4 border-border-dark p-4 neo-shadow active-push flex items-center justify-center font-display text-label-bold uppercase hover:bg-surface-container-lowest hover:text-on-surface transition-colors text-center text-black"
                   href="https://linkedin.com/in/muhammad-kholis-51ba57195"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -385,7 +385,7 @@ export default function ProjectDetailClient({ project }: ProjectDetailClientProp
                   LinkedIn
                 </a>
                 <a
-                  className="bg-black border-4 border-black p-4 neo-shadow active-push flex items-center justify-center font-display text-label-bold uppercase text-white hover:bg-tertiary-fixed hover:text-black transition-colors text-center"
+                  className="bg-foreground border-4 border-border-dark p-4 neo-shadow active-push flex items-center justify-center font-display text-label-bold uppercase text-background hover:bg-tertiary-fixed hover:text-on-tertiary-fixed transition-colors text-center"
                   href="https://github.com/TissuGalon"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -393,7 +393,7 @@ export default function ProjectDetailClient({ project }: ProjectDetailClientProp
                   GitHub
                 </a>
                 <a
-                  className="bg-tertiary-fixed border-4 border-black p-4 neo-shadow active-push flex items-center justify-center font-display text-label-bold uppercase hover:bg-vibrant-orange transition-colors col-span-2 text-center text-black"
+                  className="bg-tertiary-fixed border-4 border-border-dark p-4 neo-shadow active-push flex items-center justify-center font-display text-label-bold uppercase hover:bg-vibrant-orange transition-colors col-span-2 text-center text-black"
                   href="https://www.instagram.com/its.przvl._"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -404,8 +404,8 @@ export default function ProjectDetailClient({ project }: ProjectDetailClientProp
             </div>
           </div>
 
-          <div className="flex flex-col md:flex-row justify-between items-center w-full py-10 gap-6 bg-white border-4 border-black p-6 neo-shadow mt-16 transform -rotate-1 text-black">
-            <div className="font-display text-headline-md font-black text-on-surface flex items-center gap-2 text-black">
+          <div className="flex flex-col md:flex-row justify-between items-center w-full py-10 gap-6 bg-surface-container-lowest border-4 border-border-dark p-6 neo-shadow mt-16 transform -rotate-1 text-on-surface">
+            <div className="font-display text-headline-md font-black text-on-surface flex items-center gap-2">
               <span
                 className="material-symbols-outlined text-vibrant-orange text-3xl"
                 style={{ fontVariationSettings: "'FILL' 1" }}
@@ -414,14 +414,14 @@ export default function ProjectDetailClient({ project }: ProjectDetailClientProp
               </span>{" "}
               Portfolio
             </div>
-            <div className="font-display text-body-md text-black/60 font-bold">
+            <div className="font-display text-body-md text-on-surface/60 font-bold">
               © 2024 Muhammad Kholis. Built with precision.
             </div>
             <div className="flex gap-6">
-              <span className="font-display font-bold text-black/50">
+              <span className="font-display font-bold text-on-surface/50">
                 Langsa, Indonesia
               </span>
-              <span className="font-display font-bold text-black/50">
+              <span className="font-display font-bold text-on-surface/50">
                 +62 851-6178-7501
               </span>
             </div>
@@ -457,7 +457,7 @@ function MarkdownRenderer({ content }: { content: string }) {
       pushList()
       const text = line.substring(3).trim()
       elements.push(
-        <h2 key={i} className="font-display text-headline-md text-on-background mt-8 mb-4 border-b-4 border-primary-container inline-block pb-2 uppercase font-extrabold text-black">
+        <h2 key={i} className="font-display text-headline-md text-on-background mt-8 mb-4 border-b-4 border-primary-container inline-block pb-2 uppercase font-extrabold">
           {renderText(text)}
         </h2>
       )
@@ -465,7 +465,7 @@ function MarkdownRenderer({ content }: { content: string }) {
       pushList()
       const text = line.substring(2).trim()
       elements.push(
-        <h1 key={i} className="font-display text-headline-lg text-border-dark uppercase font-black my-6 text-black">
+        <h1 key={i} className="font-display text-headline-lg text-border-dark uppercase font-black my-6 text-on-background">
           {renderText(text)}
         </h1>
       )
@@ -503,7 +503,7 @@ function renderText(text: string): ReactNode {
     if (typeof part !== "string") return part
     const regex = /\*\*([\s\S]+?)\*\*/g
     const split = part.split(regex)
-    return split.map((str, i) => (i % 2 === 1 ? <strong key={`b-${idx}-${i}`} className="font-extrabold text-on-background text-black">{str}</strong> : str))
+    return split.map((str, i) => (i % 2 === 1 ? <strong key={`b-${idx}-${i}`} className="font-extrabold text-on-background">{str}</strong> : str))
   })
 
   // Code (`code`)

@@ -31,6 +31,8 @@
     --color-secondary: var(--secondary);
     --color-primary-foreground: var(--primary-foreground);
     --color-primary: var(--primary);
+    --color-primary-container: var(--primary-container);
+    --color-on-primary-container: var(--on-primary-container);
     --color-popover-foreground: var(--popover-foreground);
     --color-popover: var(--popover);
     --color-card-foreground: var(--card-foreground);
@@ -100,6 +102,8 @@
     --popover-foreground: #1b1b1b;
     --primary: #c7f300;
     --primary-foreground: #171e00;
+    --primary-container: #d1ff00;
+    --on-primary-container: #1b1b1b;
     --secondary: #7df4ff;
     --secondary-foreground: #002022;
     --muted: #eeeeee;
@@ -171,6 +175,8 @@
     --popover-foreground: #f1f1f1;
     --primary: #c7f300;
     --primary-foreground: #171e00;
+    --primary-container: #2c3500;
+    --on-primary-container: #d1ff00;
     --secondary: #7df4ff;
     --secondary-foreground: #002022;
     --muted: #2d2d2d;
@@ -393,5 +399,12 @@
   }
   html {
     @apply font-sans scroll-smooth;
+  }
+}
+
+@media (min-width: 768px) {
+  body,
+  body * {
+    cursor: none !important;
   }
 }

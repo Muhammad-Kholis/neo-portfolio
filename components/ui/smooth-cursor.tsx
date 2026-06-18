@@ -77,20 +77,6 @@ export function SmoothCursor() {
 
   return (
     <>
-      <style jsx global>{`
-        @media (min-width: 768px) {
-          body,
-          a,
-          button,
-          input,
-          textarea,
-          select,
-          [role="button"] {
-            cursor: none !important;
-          }
-        }
-      `}</style>
-
       {/* Central Cursor Point */}
       <div
         ref={cursorDotRef}
@@ -103,7 +89,7 @@ export function SmoothCursor() {
         ref={cursorOutlineRef}
         className={`pointer-events-none fixed top-0 left-0 z-[9999] -translate-x-1/2 -translate-y-1/2 rounded-full border-3 border-black dark:border-white transition-[width,height,background-color] duration-200 ease-out md:block hidden ${
           isHovering
-            ? "h-11 w-11 bg-vibrant-orange/40 border-vibrant-orange scale-110"
+            ? "h-11 w-11 bg-vibrant-orange/40 border-vibrant-orange"
             : "h-7 w-7 bg-transparent"
         }`}
         style={{ willChange: "transform" }}

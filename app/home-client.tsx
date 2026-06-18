@@ -22,16 +22,16 @@ const projectTagsMap: Record<string, string[]> = {
 }
 
 const tagBgMap: Record<string, string> = {
-  "Flutter": "bg-primary-container",
-  "Next.js": "bg-secondary-container",
-  "Supabase": "bg-tertiary-fixed",
-  "Firebase": "bg-error-container",
-  "Tailwind CSS": "bg-primary-fixed",
-  "MDX": "bg-surface",
-  "Dart": "bg-[#eedbff]",
-  "React": "bg-secondary-fixed",
-  "PostgreSQL": "bg-primary-container",
-  "Git": "bg-white"
+  "Flutter": "bg-primary-fixed text-black",
+  "Next.js": "bg-secondary-fixed text-black",
+  "Supabase": "bg-tertiary-fixed text-black",
+  "Firebase": "bg-error-container text-black",
+  "Tailwind CSS": "bg-primary-fixed text-black",
+  "MDX": "bg-surface-container-lowest text-on-surface",
+  "Dart": "bg-[#eedbff] dark:bg-[#2a1b3d] text-black dark:text-white",
+  "React": "bg-secondary-fixed text-black",
+  "PostgreSQL": "bg-primary-container text-on-primary-container",
+  "Git": "bg-surface-container-lowest text-on-surface"
 }
 
 function getProjectTags(slug: string): string[] {
@@ -39,7 +39,7 @@ function getProjectTags(slug: string): string[] {
 }
 
 function getTagBgClass(tag: string): string {
-  return tagBgMap[tag] || "bg-white"
+  return tagBgMap[tag] || "bg-surface-container-lowest text-on-surface"
 }
 
 export default function HomeClient({ projects }: HomeClientProps) {
@@ -299,7 +299,7 @@ export default function HomeClient({ projects }: HomeClientProps) {
             Hi, I&apos;m <br />
             <div className="relative inline-block mt-2">
               <span className="absolute inset-0 bg-primary-container border-4 border-border-dark transform rotate-1 neo-shadow-lg"></span>
-              <span className="relative bg-white border-4 border-border-dark px-4 py-2 inline-block transform -rotate-2 neo-shadow text-black">
+              <span className="relative bg-surface-container-lowest border-4 border-border-dark px-4 py-2 inline-block transform -rotate-2 neo-shadow text-on-surface">
                 Muhammad Kholis
               </span>
             </div>
@@ -349,9 +349,9 @@ export default function HomeClient({ projects }: HomeClientProps) {
               alt="Muhammad Kholis Profile Photo"
               style={{ aspectRatio: "1/1" }}
             />
-            <div className="absolute -bottom-6 -left-6 bg-white border-3 border-border-dark p-2 neo-shadow transform -rotate-12 z-20 flex items-center gap-2">
+            <div className="absolute -bottom-6 -left-6 bg-surface-container-lowest border-3 border-border-dark p-2 neo-shadow transform -rotate-12 z-20 flex items-center gap-2">
               <span className="material-symbols-outlined text-vibrant-orange">verified</span>{" "}
-              <span className="font-bold text-sm text-black">DEV.APPROVED</span>
+              <span className="font-bold text-sm text-on-surface">DEV.APPROVED</span>
             </div>
           </div>
         </div>
@@ -392,14 +392,14 @@ export default function HomeClient({ projects }: HomeClientProps) {
 
           <div className="grid grid-cols-1 md:grid-cols-12 gap-10 mt-8">
             <div className="md:col-span-4 flex flex-col gap-6">
-              <div className="bg-white border-4 border-black p-6 neo-shadow-lg transform -rotate-2 relative">
-                <div className="absolute -top-4 -left-4 bg-secondary-fixed border-2 border-black px-2 py-1 text-xs font-bold uppercase text-black">
+              <div className="bg-surface-container-lowest border-4 border-border-dark p-6 neo-shadow-lg transform -rotate-2 relative">
+                <div className="absolute -top-4 -left-4 bg-secondary-fixed border-2 border-border-dark px-2 py-1 text-xs font-bold uppercase text-black">
                   Status
                 </div>
-                <h2 className="font-display text-headline-md text-black mb-4 flex items-center gap-2">
+                <h2 className="font-display text-headline-md text-on-surface mb-4 flex items-center gap-2">
                   <span className="material-symbols-outlined">person</span> Profile
                 </h2>
-                <ul className="font-display text-body-md flex flex-col gap-2 text-black">
+                <ul className="font-display text-body-md flex flex-col gap-2 text-on-surface">
                   <li>
                     <span className="font-bold">Role:</span> Informatics Student
                   </li>
@@ -411,16 +411,16 @@ export default function HomeClient({ projects }: HomeClientProps) {
                   </li>
                 </ul>
               </div>
-              <div className="bg-primary-container border-4 border-black p-4 neo-shadow transform rotate-1">
-                <p className="font-display text-label-bold uppercase text-center text-black">Open for Collaboration</p>
+              <div className="bg-primary-container border-4 border-border-dark p-4 neo-shadow transform rotate-1">
+                <p className="font-display text-label-bold uppercase text-center text-on-primary-container">Open for Collaboration</p>
               </div>
             </div>
 
             <div className="md:col-span-8 bg-background border-4 border-border-dark p-6 md:p-10 neo-shadow-xl relative overflow-hidden">
               <div className="absolute top-0 right-0 w-24 h-24 bg-dots opacity-20"></div>
               <h2 className="font-display text-headline-lg-mobile md:text-headline-lg text-on-background flex items-center gap-2 uppercase mb-6">
-                <span className="bg-primary-container p-2 border-3 border-black neo-shadow inline-block">
-                  <span className="material-symbols-outlined text-4xl text-black" style={{ fontVariationSettings: "'FILL' 1" }}>
+                <span className="bg-primary-container p-2 border-3 border-border-dark neo-shadow inline-block">
+                  <span className="material-symbols-outlined text-4xl text-on-primary-container" style={{ fontVariationSettings: "'FILL' 1" }}>
                     person
                   </span>
                 </span>{" "}
@@ -450,63 +450,63 @@ export default function HomeClient({ projects }: HomeClientProps) {
           >
             <span className="material-symbols-outlined font-black">photo_library</span>
           </div>
-          <h2 className="font-display text-headline-lg-mobile md:text-display text-on-background inline-block bg-white border-4 border-border-dark px-6 py-2 neo-shadow transform rotate-1 uppercase text-black">
+          <h2 className="font-display text-headline-lg-mobile md:text-display text-on-background inline-block bg-surface-container-lowest border-4 border-border-dark px-6 py-2 neo-shadow transform rotate-1 uppercase text-on-surface">
             Visual Archive
           </h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6 auto-rows-[300px]">
           <div className="md:col-span-8 relative group">
-            <div className="absolute inset-0 bg-primary-fixed border-4 border-black translate-x-4 translate-y-4"></div>
-            <div className="relative h-full bg-white border-4 border-black overflow-hidden hover:-translate-y-1 transition-transform">
+            <div className="absolute inset-0 bg-primary-fixed border-4 border-border-dark translate-x-4 translate-y-4"></div>
+            <div className="relative h-full bg-surface-container-lowest border-4 border-border-dark overflow-hidden hover:-translate-y-1 transition-transform">
               <img
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
                 src="/images/muhammadkholis_ui_.webp"
                 alt="Workflow visual archive"
               />
-              <div className="absolute top-4 left-4 bg-secondary-fixed border-2 border-black px-3 py-1 text-sm font-black uppercase neo-shadow transform -rotate-3 text-black">
+              <div className="absolute top-4 left-4 bg-secondary-fixed border-2 border-border-dark px-3 py-1 text-sm font-black uppercase neo-shadow transform -rotate-3 text-on-surface">
                 Workflow
               </div>
             </div>
           </div>
 
           <div className="md:col-span-4 relative group">
-            <div className="absolute inset-0 bg-secondary-fixed border-4 border-black translate-x-4 translate-y-4"></div>
-            <div className="relative h-full bg-white border-4 border-black overflow-hidden hover:-translate-y-1 transition-transform">
+            <div className="absolute inset-0 bg-secondary-fixed border-4 border-border-dark translate-x-4 translate-y-4"></div>
+            <div className="relative h-full bg-surface-container-lowest border-4 border-border-dark overflow-hidden hover:-translate-y-1 transition-transform">
               <img
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
                 src="/images/muhammadkholis2.webp"
                 alt="Behind the scenes visual archive"
               />
-              <div className="absolute bottom-4 right-4 bg-vibrant-orange border-2 border-black px-3 py-1 text-sm font-black uppercase neo-shadow transform rotate-6 text-black">
+              <div className="absolute bottom-4 right-4 bg-vibrant-orange border-2 border-border-dark px-3 py-1 text-sm font-black uppercase neo-shadow transform rotate-6 text-on-surface">
                 BTS
               </div>
             </div>
           </div>
 
           <div className="md:col-span-4 relative group">
-            <div className="absolute inset-0 bg-tertiary-fixed border-4 border-black translate-x-4 translate-y-4"></div>
-            <div className="relative h-full bg-white border-4 border-black overflow-hidden hover:-translate-y-1 transition-transform">
+            <div className="absolute inset-0 bg-tertiary-fixed border-4 border-border-dark translate-x-4 translate-y-4"></div>
+            <div className="relative h-full bg-surface-container-lowest border-4 border-border-dark overflow-hidden hover:-translate-y-1 transition-transform">
               <img
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
                 src="/images/muhammadkholis.webp"
                 alt="Moments visual archive"
               />
-              <div className="absolute top-4 right-4 bg-primary-container border-2 border-black px-3 py-1 text-sm font-black uppercase neo-shadow transform rotate-2 text-black">
+              <div className="absolute top-4 right-4 bg-primary-container border-2 border-border-dark px-3 py-1 text-sm font-black uppercase neo-shadow transform rotate-2 text-on-primary-container">
                 Moments
               </div>
             </div>
           </div>
 
           <div className="md:col-span-8 relative group">
-            <div className="absolute inset-0 bg-vibrant-orange border-4 border-black translate-x-4 translate-y-4"></div>
-            <div className="relative h-full bg-white border-4 border-black overflow-hidden hover:-translate-y-1 transition-transform">
+            <div className="absolute inset-0 bg-vibrant-orange border-4 border-border-dark translate-x-4 translate-y-4"></div>
+            <div className="relative h-full bg-surface-container-lowest border-4 border-border-dark overflow-hidden hover:-translate-y-1 transition-transform">
               <img
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
                 src="/images/muhammadkholis2.webp"
                 alt="Process visual archive"
               />
-              <div className="absolute bottom-4 left-4 bg-secondary-container border-2 border-black px-3 py-1 text-sm font-black uppercase neo-shadow transform -rotate-2 text-black">
+              <div className="absolute bottom-4 left-4 bg-secondary-container border-2 border-border-dark px-3 py-1 text-sm font-black uppercase neo-shadow transform -rotate-2 text-on-surface-variant">
                 Process
               </div>
             </div>
@@ -517,10 +517,10 @@ export default function HomeClient({ projects }: HomeClientProps) {
       {/* Technical Arsenal (Skills & Education) */}
       <section className="max-w-[1280px] mx-auto px-4 md:px-12 py-16" id="skills">
         <div className="flex items-center gap-4 mb-10">
-          <div className="w-12 h-12 bg-primary-fixed border-4 border-black rounded-full flex items-center justify-center neo-shadow animate-bounce">
+          <div className="w-12 h-12 bg-primary-fixed border-4 border-border-dark rounded-full flex items-center justify-center neo-shadow animate-bounce">
             <span className="material-symbols-outlined font-black">bolt</span>
           </div>
-          <h2 className="font-display text-headline-lg-mobile md:text-display text-on-background inline-block bg-white border-4 border-border-dark px-4 py-2 neo-shadow transform -rotate-1 uppercase text-black">
+          <h2 className="font-display text-headline-lg-mobile md:text-display text-on-background inline-block bg-surface-container-lowest border-4 border-border-dark px-4 py-2 neo-shadow transform -rotate-1 uppercase text-on-surface">
             Technical Arsenal
           </h2>
         </div>
@@ -534,18 +534,18 @@ export default function HomeClient({ projects }: HomeClientProps) {
                 <div className="bg-primary-fixed text-black border-3 border-border-dark px-4 py-2 font-display text-label-bold uppercase w-max mb-4 neo-shadow transform -rotate-3 text-lg">
                   Education
                 </div>
-                <h3 className="font-display text-headline-md text-on-background bg-white border-2 border-black p-2 inline-block text-black">
+                <h3 className="font-display text-headline-md text-on-background bg-surface-container-lowest border-2 border-border-dark p-2 inline-block text-on-surface">
                   Politeknik Negeri Lhokseumawe
                 </h3>
-                <p className="font-display text-body-md text-black mt-2 font-bold bg-secondary-fixed border-2 border-black p-1 inline-block">
+                <p className="font-display text-body-md text-black mt-2 font-bold bg-secondary-fixed border-2 border-border-dark p-1 inline-block">
                   Teknik Informatika (IPK: 3.53)
                 </p>
               </div>
               <div className="border-t-4 border-border-dark pt-4 mt-auto border-dashed">
-                <h3 className="font-display text-headline-md text-on-background bg-white border-2 border-black p-2 inline-block text-black">
+                <h3 className="font-display text-headline-md text-on-background bg-surface-container-lowest border-2 border-border-dark p-2 inline-block text-on-surface">
                   SMK Negeri 2 Kota Langsa
                 </h3>
-                <p className="font-display text-body-md text-black font-bold bg-tertiary-fixed border-2 border-black p-1 inline-block mt-1">
+                <p className="font-display text-body-md text-black font-bold bg-tertiary-fixed border-2 border-border-dark p-1 inline-block mt-1">
                   Rekayasa Perangkat Lunak (84.81)
                 </p>
               </div>
@@ -555,13 +555,13 @@ export default function HomeClient({ projects }: HomeClientProps) {
           {/* Tech Stack Card */}
           <div className="md:col-span-7 relative group">
             <div className="absolute inset-0 bg-secondary-fixed border-4 border-border-dark translate-x-4 translate-y-4"></div>
-            <div className="relative h-full bg-[#eedbff] border-4 border-border-dark p-6 overflow-hidden flex flex-col hover:-translate-y-2 hover:-translate-x-2 transition-transform text-black">
-              <div className="absolute top-4 right-4 w-20 h-20 bg-primary-fixed border-4 border-black rounded-full flex items-center justify-center neo-shadow text-center font-bold text-xs transform rotate-12">
+            <div className="relative h-full bg-[#eedbff] dark:bg-[#2a1b3d] border-4 border-border-dark p-6 overflow-hidden flex flex-col hover:-translate-y-2 hover:-translate-x-2 transition-transform text-black dark:text-white">
+              <div className="absolute top-4 right-4 w-20 h-20 bg-primary-fixed border-4 border-border-dark rounded-full flex items-center justify-center neo-shadow text-center font-bold text-xs transform rotate-12 text-black">
                 TECH
                 <br />
                 STACK
               </div>
-              <div className="bg-background border-3 border-border-dark px-4 py-2 font-display text-label-bold uppercase w-max mb-4 neo-shadow transform rotate-2 text-lg text-black">
+              <div className="bg-background border-3 border-border-dark px-4 py-2 font-display text-label-bold uppercase w-max mb-4 neo-shadow transform rotate-2 text-lg text-on-background">
                 Core Technologies
               </div>
               <div className="flex flex-wrap gap-4 mt-4">
@@ -574,7 +574,7 @@ export default function HomeClient({ projects }: HomeClientProps) {
                 <span className="bg-secondary-fixed border-3 border-border-dark px-4 py-2 font-display text-label-bold uppercase neo-shadow hover:-translate-y-1 transition-transform text-base text-black">
                   React
                 </span>
-                <span className="bg-white border-3 border-border-dark px-4 py-2 font-display text-label-bold uppercase neo-shadow hover:-translate-y-1 transition-transform text-base text-black">
+                <span className="bg-surface-container-lowest border-3 border-border-dark px-4 py-2 font-display text-label-bold uppercase neo-shadow hover:-translate-y-1 transition-transform text-base text-on-surface">
                   Dart
                 </span>
                 <span className="bg-tertiary-fixed border-3 border-border-dark px-4 py-2 font-display text-label-bold uppercase neo-shadow hover:-translate-y-1 transition-transform text-base text-black">
@@ -583,16 +583,16 @@ export default function HomeClient({ projects }: HomeClientProps) {
                 <span className="bg-error-container border-3 border-border-dark px-4 py-2 font-display text-label-bold uppercase neo-shadow hover:-translate-y-1 transition-transform text-base text-black">
                   Firebase
                 </span>
-                <span className="bg-primary-container border-3 border-border-dark px-4 py-2 font-display text-label-bold uppercase neo-shadow hover:-translate-y-1 transition-transform text-base text-black">
+                <span className="bg-primary-container border-3 border-border-dark px-4 py-2 font-display text-label-bold uppercase neo-shadow hover:-translate-y-1 transition-transform text-base text-on-primary-container">
                   PostgreSQL
                 </span>
-                <span className="bg-black text-white border-3 border-border-dark px-4 py-2 font-display text-label-bold uppercase neo-shadow hover:-translate-y-1 transition-transform text-base">
+                <span className="bg-foreground text-background border-3 border-border-dark px-4 py-2 font-display text-label-bold uppercase neo-shadow hover:-translate-y-1 transition-transform text-base">
                   Golang
                 </span>
-                <span className="bg-[#a8ffb2] border-3 border-border-dark px-4 py-2 font-display text-label-bold uppercase neo-shadow hover:-translate-y-1 transition-transform text-base text-black">
+                <span className="bg-[#a8ffb2] dark:bg-[#183a1c] border-3 border-border-dark px-4 py-2 font-display text-label-bold uppercase neo-shadow hover:-translate-y-1 transition-transform text-base text-black dark:text-white">
                   Docker
                 </span>
-                <span className="bg-white border-3 border-border-dark px-4 py-2 font-display text-label-bold uppercase neo-shadow hover:-translate-y-1 transition-transform text-base text-black">
+                <span className="bg-surface-container-lowest border-3 border-border-dark px-4 py-2 font-display text-label-bold uppercase neo-shadow hover:-translate-y-1 transition-transform text-base text-on-surface">
                   Git
                 </span>
               </div>
@@ -604,10 +604,10 @@ export default function HomeClient({ projects }: HomeClientProps) {
       {/* Work Experience Section */}
       <section className="max-w-[1280px] mx-auto px-4 md:px-12 py-16" id="experience">
         <div className="flex items-center gap-4 mb-10">
-          <div className="w-12 h-12 bg-vibrant-orange border-4 border-black rounded-full flex items-center justify-center neo-shadow animate-pulse">
+          <div className="w-12 h-12 bg-vibrant-orange border-4 border-border-dark rounded-full flex items-center justify-center neo-shadow animate-pulse">
             <span className="material-symbols-outlined font-black">work_history</span>
           </div>
-          <h2 className="font-display text-headline-lg-mobile md:text-display text-on-background inline-block bg-white border-4 border-border-dark px-4 py-2 neo-shadow transform rotate-1 uppercase text-black">
+          <h2 className="font-display text-headline-lg-mobile md:text-display text-on-background inline-block bg-surface-container-lowest border-4 border-border-dark px-4 py-2 neo-shadow transform rotate-1 uppercase text-on-surface">
             Work Experience
           </h2>
         </div>
@@ -616,13 +616,13 @@ export default function HomeClient({ projects }: HomeClientProps) {
           {/* Experience Card 1 */}
           <div className="relative group">
             {/* Timeline marker */}
-            <div className="absolute -left-[38px] top-1.5 w-6 h-6 rounded-full bg-vibrant-orange border-4 border-black z-10 group-hover:scale-125 transition-transform"></div>
+            <div className="absolute -left-[38px] top-1.5 w-6 h-6 rounded-full bg-vibrant-orange border-4 border-border-dark z-10 group-hover:scale-125 transition-transform"></div>
 
             <div className="absolute inset-0 bg-primary-fixed border-4 border-border-dark translate-x-4 translate-y-4"></div>
             <div className="relative bg-background border-4 border-border-dark p-6 hover:-translate-y-2 hover:-translate-x-2 transition-transform">
               <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-2 mb-4 border-b-2 border-dashed border-border-dark pb-4">
                 <div>
-                  <span className="bg-white border-2 border-black px-2 py-0.5 font-display text-label-sm uppercase font-bold text-xs inline-block mb-1 text-black">
+                  <span className="bg-surface-container-lowest border-2 border-border-dark px-2 py-0.5 font-display text-label-sm uppercase font-bold text-xs inline-block mb-1 text-on-surface">
                     Fulltime / Remot
                   </span>
                   <h3 className="font-display text-headline-md text-on-background font-extrabold uppercase">
@@ -633,7 +633,7 @@ export default function HomeClient({ projects }: HomeClientProps) {
                   </span>
                 </div>
                 <div className="text-right">
-                  <span className="bg-black text-white px-3 py-1 font-display text-label-bold uppercase text-sm inline-block">
+                  <span className="bg-foreground text-background border border-border-dark px-3 py-1 font-display text-label-bold uppercase text-sm inline-block">
                     23 Apr 2026 – Sekarang
                   </span>
                 </div>
@@ -648,13 +648,13 @@ export default function HomeClient({ projects }: HomeClientProps) {
           {/* Experience Card 2 */}
           <div className="relative group">
             {/* Timeline marker */}
-            <div className="absolute -left-[38px] top-1.5 w-6 h-6 rounded-full bg-secondary-fixed border-4 border-black z-10 group-hover:scale-125 transition-transform"></div>
+            <div className="absolute -left-[38px] top-1.5 w-6 h-6 rounded-full bg-secondary-fixed border-4 border-border-dark z-10 group-hover:scale-125 transition-transform"></div>
 
             <div className="absolute inset-0 bg-secondary-fixed border-4 border-border-dark translate-x-4 translate-y-4"></div>
             <div className="relative bg-background border-4 border-border-dark p-6 hover:-translate-y-2 hover:-translate-x-2 transition-transform">
               <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-2 mb-4 border-b-2 border-dashed border-border-dark pb-4">
                 <div>
-                  <span className="bg-white border-2 border-black px-2 py-0.5 font-display text-label-sm uppercase font-bold text-xs inline-block mb-1 text-black">
+                  <span className="bg-surface-container-lowest border-2 border-border-dark px-2 py-0.5 font-display text-label-sm uppercase font-bold text-xs inline-block mb-1 text-on-surface">
                     Internship
                   </span>
                   <h3 className="font-display text-headline-md text-on-background font-extrabold uppercase">
@@ -665,7 +665,7 @@ export default function HomeClient({ projects }: HomeClientProps) {
                   </span>
                 </div>
                 <div className="text-right">
-                  <span className="bg-black text-white px-3 py-1 font-display text-label-bold uppercase text-sm inline-block">
+                  <span className="bg-foreground text-background border border-border-dark px-3 py-1 font-display text-label-bold uppercase text-sm inline-block">
                     Agu 2025 – Jan 2026
                   </span>
                 </div>
@@ -681,13 +681,13 @@ export default function HomeClient({ projects }: HomeClientProps) {
           {/* Experience Card 3 */}
           <div className="relative group">
             {/* Timeline marker */}
-            <div className="absolute -left-[38px] top-1.5 w-6 h-6 rounded-full bg-tertiary-fixed border-4 border-black z-10 group-hover:scale-125 transition-transform"></div>
+            <div className="absolute -left-[38px] top-1.5 w-6 h-6 rounded-full bg-tertiary-fixed border-4 border-border-dark z-10 group-hover:scale-125 transition-transform"></div>
 
             <div className="absolute inset-0 bg-tertiary-fixed border-4 border-border-dark translate-x-4 translate-y-4"></div>
             <div className="relative bg-background border-4 border-border-dark p-6 hover:-translate-y-2 hover:-translate-x-2 transition-transform">
               <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-2 mb-4 border-b-2 border-dashed border-border-dark pb-4">
                 <div>
-                  <span className="bg-white border-2 border-black px-2 py-0.5 font-display text-label-sm uppercase font-bold text-xs inline-block mb-1 text-black">
+                  <span className="bg-surface-container-lowest border-2 border-border-dark px-2 py-0.5 font-display text-label-sm uppercase font-bold text-xs inline-block mb-1 text-on-surface">
                     Self-Employed / Remot
                   </span>
                   <h3 className="font-display text-headline-md text-on-background font-extrabold uppercase">
@@ -698,7 +698,7 @@ export default function HomeClient({ projects }: HomeClientProps) {
                   </span>
                 </div>
                 <div className="text-right">
-                  <span className="bg-black text-white px-3 py-1 font-display text-label-bold uppercase text-sm inline-block">
+                  <span className="bg-foreground text-background border border-border-dark px-3 py-1 font-display text-label-bold uppercase text-sm inline-block">
                     2022 – Sekarang
                   </span>
                 </div>
@@ -716,22 +716,22 @@ export default function HomeClient({ projects }: HomeClientProps) {
       {/* Selected Work (Projects) */}
       <section className="max-w-[1280px] mx-auto px-4 md:px-12 py-16" id="work">
         <div className="flex flex-col items-center mb-16 relative">
-          <h2 className="font-display text-display text-on-background mb-2 inline-block bg-primary-fixed border-4 border-border-dark px-8 py-4 neo-shadow-xl transform rotate-1 uppercase text-center w-full md:w-auto text-black">
+          <h2 className="font-display text-display text-on-primary-fixed mb-2 inline-block bg-primary-fixed border-4 border-border-dark px-8 py-4 neo-shadow-xl transform rotate-1 uppercase text-center w-full md:w-auto">
             Selected Work
           </h2>
-          <div className="bg-vibrant-orange border-3 border-black px-4 py-1 font-bold transform -rotate-3 -mt-4 z-10 neo-shadow text-black">
+          <div className="bg-vibrant-orange border-3 border-border-dark px-4 py-1 font-bold transform -rotate-3 -mt-4 z-10 neo-shadow text-black">
             PROJECTS ARCHIVE // 2024
           </div>
         </div>
 
         {/* Filters and Search */}
         <div className="w-full mb-16 flex flex-col md:flex-row gap-6 items-stretch md:items-center">
-          <div className="relative flex-grow text-black">
-            <span className="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-black font-black">
+          <div className="relative flex-grow text-on-surface">
+            <span className="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface font-black">
               search
             </span>
             <input
-              className="w-full bg-white border-4 border-black p-4 pl-14 font-display text-label-bold uppercase neo-shadow focus:outline-none focus:ring-0 placeholder:text-black/50"
+              className="w-full bg-surface-container-lowest border-4 border-border-dark p-4 pl-14 font-display text-label-bold uppercase neo-shadow focus:outline-none focus:ring-0 placeholder:text-on-surface/50 text-on-surface"
               placeholder="SEARCH PROJECTS..."
               type="text"
               value={searchQuery}
@@ -741,24 +741,24 @@ export default function HomeClient({ projects }: HomeClientProps) {
           <div className="flex flex-wrap gap-2">
             <button
               onClick={() => setSelectedCategory("All")}
-              className={`border-4 border-black px-6 py-4 font-display text-label-bold uppercase text-black neo-shadow active-push transition-all ${
-                selectedCategory === "All" ? "bg-primary-container" : "bg-white hover:bg-secondary-fixed"
+              className={`border-4 border-border-dark px-6 py-4 font-display text-label-bold uppercase neo-shadow active-push transition-all ${
+                selectedCategory === "All" ? "bg-primary-container text-on-primary-container" : "bg-surface-container-lowest text-on-surface hover:bg-secondary-fixed hover:text-black"
               }`}
             >
               All
             </button>
             <button
               onClick={() => setSelectedCategory("Mobile")}
-              className={`border-4 border-black px-6 py-4 font-display text-label-bold uppercase text-black neo-shadow active-push transition-all ${
-                selectedCategory === "Mobile" ? "bg-primary-container" : "bg-white hover:bg-secondary-fixed"
+              className={`border-4 border-border-dark px-6 py-4 font-display text-label-bold uppercase neo-shadow active-push transition-all ${
+                selectedCategory === "Mobile" ? "bg-primary-container text-on-primary-container" : "bg-surface-container-lowest text-on-surface hover:bg-secondary-fixed hover:text-black"
               }`}
             >
               Mobile
             </button>
             <button
               onClick={() => setSelectedCategory("Web")}
-              className={`border-4 border-black px-6 py-4 font-display text-label-bold uppercase text-black neo-shadow active-push transition-all ${
-                selectedCategory === "Web" ? "bg-primary-container" : "bg-white hover:bg-secondary-fixed"
+              className={`border-4 border-border-dark px-6 py-4 font-display text-label-bold uppercase neo-shadow active-push transition-all ${
+                selectedCategory === "Web" ? "bg-primary-container text-on-primary-container" : "bg-surface-container-lowest text-on-surface hover:bg-secondary-fixed hover:text-black"
               }`}
             >
               Web
@@ -778,27 +778,27 @@ export default function HomeClient({ projects }: HomeClientProps) {
                 <div className={`absolute inset-0 border-4 border-border-dark translate-x-4 translate-y-4 ${offsetBg}`}></div>
                 <div className="relative bg-background border-4 border-border-dark flex flex-col h-full hover:-translate-y-2 hover:-translate-x-2 transition-transform">
                   <div className="border-b-4 border-border-dark relative overflow-hidden bg-surface h-56 p-2">
-                    <div className="absolute top-4 left-4 bg-primary-fixed border-2 border-black px-2 py-1 text-xs font-bold z-10 neo-shadow text-black">
+                    <div className="absolute top-4 left-4 bg-primary-fixed border-2 border-border-dark px-2 py-1 text-xs font-bold z-10 neo-shadow text-on-primary-fixed">
                       {String(i + 1).padStart(2, "0")}
                     </div>
                     <img
-                      className="w-full h-full object-cover border-2 border-black group-hover:scale-105 transition-transform duration-500"
+                      className="w-full h-full object-cover border-2 border-border-dark group-hover:scale-105 transition-transform duration-500"
                       src={project.cover}
                       alt={`${project.title} Preview`}
                     />
                   </div>
                   <div className="p-6 flex flex-col flex-grow bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTAgMTBMMTAgMEgwdjEweiIgZmlsbD0iI0YyRjJGMiIvPjwvc3ZnPg==')]">
-                    <h3 className="font-display text-headline-md text-on-background mb-2 bg-white border-2 border-black p-1 inline-block w-max uppercase text-black">
+                    <h3 className="font-display text-headline-md text-on-background mb-2 bg-surface-container-lowest border-2 border-border-dark p-1 inline-block w-max uppercase text-on-surface">
                       {project.title}
                     </h3>
-                    <p className="font-display text-body-md text-on-surface-variant mb-6 flex-grow bg-white p-2 border-2 border-black text-on-surface">
+                    <p className="font-display text-body-md text-on-surface-variant mb-6 flex-grow bg-surface-container-lowest p-2 border-2 border-border-dark text-on-surface">
                       {project.desc}
                     </p>
                     <div className="flex flex-wrap gap-2 mb-6">
                       {projectTags.map((tag) => (
                         <span
                           key={tag}
-                          className={`border-3 border-border-dark px-3 py-1 font-display text-label-sm uppercase neo-shadow text-black ${getTagBgClass(tag)}`}
+                          className={`border-3 border-border-dark px-3 py-1 font-display text-label-sm uppercase neo-shadow ${getTagBgClass(tag)}`}
                         >
                           {tag}
                         </span>
@@ -806,7 +806,7 @@ export default function HomeClient({ projects }: HomeClientProps) {
                     </div>
                     <Link
                       href={`/projects/${project.slug}`}
-                      className="bg-black text-white border-4 border-border-dark w-full py-3 font-display text-label-bold uppercase neo-shadow active-push hover:bg-vibrant-orange hover:text-black transition-colors text-lg text-center block"
+                      className="bg-foreground text-background border-4 border-border-dark w-full py-3 font-display text-label-bold uppercase neo-shadow active-push hover:bg-vibrant-orange hover:text-black transition-colors text-lg text-center block"
                     >
                       View Details
                     </Link>
@@ -816,9 +816,9 @@ export default function HomeClient({ projects }: HomeClientProps) {
             )
           })}
           {filteredProjects.length === 0 && (
-            <div className="col-span-full bg-white border-4 border-black p-12 neo-shadow text-center">
+            <div className="col-span-full bg-surface-container-lowest border-4 border-border-dark p-12 neo-shadow text-center">
               <span className="material-symbols-outlined text-6xl text-error mb-4">search_off</span>
-              <p className="font-display text-headline-md uppercase text-black">No Projects Found</p>
+              <p className="font-display text-headline-md uppercase text-on-surface">No Projects Found</p>
               <p className="font-display text-body-lg text-on-surface-variant mt-2 text-on-surface">
                 Try modifying your search or filter options.
               </p>
@@ -831,27 +831,27 @@ export default function HomeClient({ projects }: HomeClientProps) {
       <section className="max-w-[1280px] mx-auto px-4 md:px-12 py-16" id="activity-docs">
         <div className="flex flex-col md:flex-row justify-between items-end gap-4 mb-16">
           <div className="flex items-center gap-4">
-            <div className="w-12 h-12 bg-secondary-fixed border-4 border-black rounded-full flex items-center justify-center neo-shadow">
+            <div className="w-12 h-12 bg-secondary-fixed border-4 border-border-dark rounded-full flex items-center justify-center neo-shadow">
               <span className="material-symbols-outlined font-black">history_edu</span>
             </div>
-            <h2 className="font-display text-headline-lg-mobile md:text-display text-on-background inline-block bg-white border-4 border-border-dark px-6 py-2 neo-shadow transform rotate-1 uppercase text-black">
+            <h2 className="font-display text-headline-lg-mobile md:text-display text-on-background inline-block bg-surface-container-lowest border-4 border-border-dark px-6 py-2 neo-shadow transform rotate-1 uppercase text-on-surface">
               Activity Documentation
             </h2>
           </div>
           <div className="flex gap-4 items-center">
-            <div className="bg-white border-3 border-black px-4 py-2 font-bold neo-shadow text-black">
+            <div className="bg-surface-container-lowest border-3 border-border-dark px-4 py-2 font-bold neo-shadow text-on-surface">
               {String(activeSlide).padStart(2, "0")} / 03
             </div>
             <div className="flex gap-2">
               <button
                 onClick={() => scrollSlider("left")}
-                className="w-12 h-12 bg-primary-fixed border-3 border-black flex items-center justify-center neo-shadow active-push hover:bg-vibrant-orange transition-colors text-black"
+                className="w-12 h-12 bg-primary-fixed border-3 border-border-dark flex items-center justify-center neo-shadow active-push hover:bg-vibrant-orange transition-colors text-on-primary-fixed"
               >
                 <span className="material-symbols-outlined font-black">arrow_back</span>
               </button>
               <button
                 onClick={() => scrollSlider("right")}
-                className="w-12 h-12 bg-primary-fixed border-3 border-black flex items-center justify-center neo-shadow active-push hover:bg-vibrant-orange transition-colors text-black"
+                className="w-12 h-12 bg-primary-fixed border-3 border-border-dark flex items-center justify-center neo-shadow active-push hover:bg-vibrant-orange transition-colors text-on-primary-fixed"
               >
                 <span className="material-symbols-outlined font-black">arrow_forward</span>
               </button>
@@ -867,25 +867,25 @@ export default function HomeClient({ projects }: HomeClientProps) {
           <div className="flex gap-10 min-w-max px-2">
             {/* Slide 1 */}
             <div className="w-[320px] md:w-[500px] relative group">
-              <div className="absolute inset-0 bg-primary-fixed border-4 border-black translate-x-4 translate-y-4"></div>
-              <div className="relative bg-white border-4 border-black overflow-hidden flex flex-col h-full hover:-translate-y-1 transition-transform text-black">
+              <div className="absolute inset-0 bg-primary-fixed border-4 border-border-dark translate-x-4 translate-y-4"></div>
+              <div className="relative bg-surface-container-lowest border-4 border-border-dark overflow-hidden flex flex-col h-full hover:-translate-y-1 transition-transform text-on-surface">
                 <div className="h-64 relative">
                   <img
-                    className="w-full h-full object-cover border-b-4 border-black"
+                    className="w-full h-full object-cover border-b-4 border-border-dark"
                     src="/kegiatan/kmipn.webp"
                     alt="Hackathon KMIPN VI"
                   />
-                  <div className="absolute top-4 left-4 bg-vibrant-orange border-2 border-black px-2 py-1 text-xs font-bold neo-shadow text-black">
+                  <div className="absolute top-4 left-4 bg-vibrant-orange border-2 border-border-dark px-2 py-1 text-xs font-bold neo-shadow text-black">
                     TECH
                   </div>
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
-                  <h3 className="font-display text-headline-md mb-2 uppercase text-black">Hackathon KMIPN VI</h3>
+                  <h3 className="font-display text-headline-md mb-2 uppercase text-on-surface">Hackathon KMIPN VI</h3>
                   <p className="font-display text-body-md text-on-surface-variant mb-4 flex-grow text-on-surface">
                     Finalist dalam Kompetisi Mahasiswa Informatika Politeknik Nasional (KMIPN) VI di Politeknik Negeri Jakarta (2024).
                   </p>
                   <div className="mt-auto">
-                    <span className="bg-secondary-fixed border-2 border-black px-3 py-1 text-xs font-bold uppercase">
+                    <span className="bg-secondary-fixed border-2 border-border-dark px-3 py-1 text-xs font-bold uppercase text-black">
                       2024 // Finalist
                     </span>
                   </div>
@@ -895,25 +895,25 @@ export default function HomeClient({ projects }: HomeClientProps) {
 
             {/* Slide 2 */}
             <div className="w-[320px] md:w-[500px] relative group">
-              <div className="absolute inset-0 bg-tertiary-fixed border-4 border-black translate-x-4 translate-y-4"></div>
-              <div className="relative bg-white border-4 border-black overflow-hidden flex flex-col h-full hover:-translate-y-1 transition-transform text-black">
+              <div className="absolute inset-0 bg-tertiary-fixed border-4 border-border-dark translate-x-4 translate-y-4"></div>
+              <div className="relative bg-surface-container-lowest border-4 border-border-dark overflow-hidden flex flex-col h-full hover:-translate-y-1 transition-transform text-on-surface">
                 <div className="h-64 relative">
                   <img
-                    className="w-full h-full object-cover border-b-4 border-black"
+                    className="w-full h-full object-cover border-b-4 border-border-dark"
                     src="/kegiatan/komitpnl.webp"
                     alt="Komit PNL"
                   />
-                  <div className="absolute top-4 left-4 bg-primary-container border-2 border-black px-2 py-1 text-xs font-bold neo-shadow text-black">
+                  <div className="absolute top-4 left-4 bg-primary-container border-2 border-border-dark px-2 py-1 text-xs font-bold neo-shadow text-on-primary-container">
                     COMMUNITY
                   </div>
                 </div>
-                <div className="p-6 flex flex-col flex-grow text-black">
-                  <h3 className="font-display text-headline-md mb-2 uppercase text-black">Komit PNL</h3>
+                <div className="p-6 flex flex-col flex-grow text-on-surface">
+                  <h3 className="font-display text-headline-md mb-2 uppercase text-on-surface">Komit PNL</h3>
                   <p className="font-display text-body-md text-on-surface-variant mb-4 flex-grow text-on-surface">
                     Anggota Divisi Digihub - Komit PNL. Merancang aset visual kreatif dan materi publikasi digital berkualitas tinggi.
                   </p>
                   <div className="mt-auto">
-                    <span className="bg-secondary-fixed border-2 border-black px-3 py-1 text-xs font-bold uppercase">
+                    <span className="bg-secondary-fixed border-2 border-border-dark px-3 py-1 text-xs font-bold uppercase text-black">
                       2024 - 2025 // Anggota
                     </span>
                   </div>
@@ -923,25 +923,25 @@ export default function HomeClient({ projects }: HomeClientProps) {
 
             {/* Slide 3 */}
             <div className="w-[320px] md:w-[500px] relative group">
-              <div className="absolute inset-0 bg-vibrant-orange border-4 border-black translate-x-4 translate-y-4"></div>
-              <div className="relative bg-white border-4 border-black overflow-hidden flex flex-col h-full hover:-translate-y-1 transition-transform text-black">
+              <div className="absolute inset-0 bg-vibrant-orange border-4 border-border-dark translate-x-4 translate-y-4"></div>
+              <div className="relative bg-surface-container-lowest border-4 border-border-dark overflow-hidden flex flex-col h-full hover:-translate-y-1 transition-transform text-on-surface">
                 <div className="h-64 relative">
                   <img
-                    className="w-full h-full object-cover border-b-4 border-black"
+                    className="w-full h-full object-cover border-b-4 border-border-dark"
                     src="/kegiatan/ukmpolicy.webp"
                     alt="UKM POLICY"
                   />
-                  <div className="absolute top-4 left-4 bg-secondary-fixed border-2 border-black px-2 py-1 text-xs font-bold neo-shadow text-black">
+                  <div className="absolute top-4 left-4 bg-secondary-fixed border-2 border-border-dark px-2 py-1 text-xs font-bold neo-shadow text-black">
                     LEADERSHIP
                   </div>
                 </div>
-                <div className="p-6 flex flex-col flex-grow text-black">
-                  <h3 className="font-display text-headline-md mb-2 uppercase text-black">UKM POLICY</h3>
+                <div className="p-6 flex flex-col flex-grow text-on-surface">
+                  <h3 className="font-display text-headline-md mb-2 uppercase text-on-surface">UKM POLICY</h3>
                   <p className="font-display text-body-md text-on-surface-variant mb-4 flex-grow text-on-surface">
                     Ketua Bidang Pemrograman - UKM POLICY (Linux Community). Mengembangkan aplikasi dan pemeliharaan website organisasi.
                   </p>
                   <div className="mt-auto">
-                    <span className="bg-secondary-fixed border-2 border-black px-3 py-1 text-xs font-bold uppercase">
+                    <span className="bg-secondary-fixed border-2 border-border-dark px-3 py-1 text-xs font-bold uppercase text-black">
                       2023 - 2024 // Ketua Bidang
                     </span>
                   </div>
@@ -955,23 +955,23 @@ export default function HomeClient({ projects }: HomeClientProps) {
       {/* Spotlight Achievement */}
       <section className="max-w-[1280px] mx-auto px-4 md:px-12 py-16" id="activities">
         <div className="relative">
-          <div className="absolute inset-0 bg-black border-4 border-border-dark translate-x-6 translate-y-6"></div>
+          <div className="absolute inset-0 bg-foreground border-4 border-border-dark translate-x-6 translate-y-6"></div>
           <div className="relative bg-secondary-fixed border-4 border-border-dark neo-shadow-xl grid grid-cols-1 md:grid-cols-2 overflow-hidden">
             <div className="p-10 flex flex-col justify-center border-b-4 md:border-b-0 md:border-r-4 border-border-dark relative bg-secondary-fixed text-black">
-              <div className="absolute top-4 right-4 bg-vibrant-orange border-3 border-black p-2 font-black transform rotate-12 neo-shadow text-black">
+              <div className="absolute top-4 right-4 bg-vibrant-orange border-3 border-border-dark p-2 font-black transform rotate-12 neo-shadow text-black">
                 HOT!
               </div>
-              <div className="bg-white border-4 border-border-dark px-4 py-2 font-display text-label-bold uppercase w-max mb-6 neo-shadow-lg transform -rotate-2 text-xl text-black">
+              <div className="bg-surface-container-lowest border-4 border-border-dark px-4 py-2 font-display text-label-bold uppercase w-max mb-6 neo-shadow-lg transform -rotate-2 text-xl text-on-surface">
                 Achievement
               </div>
-              <h2 className="font-display text-headline-lg-mobile md:text-display text-black mb-6 uppercase bg-white border-4 border-black p-4 inline-block transform rotate-1">
+              <h2 className="font-display text-headline-lg-mobile md:text-display text-on-surface mb-6 uppercase bg-surface-container-lowest border-4 border-border-dark p-4 inline-block transform rotate-1">
                 KMIPN VI & UI/UX Finalist
               </h2>
-              <p className="font-display text-body-lg text-black font-medium mb-10 border-l-8 border-black pl-6 bg-white p-6 neo-shadow">
+              <p className="font-display text-body-lg text-on-surface font-medium mb-10 border-l-8 border-border-dark pl-6 bg-surface-container-lowest p-6 neo-shadow">
                 Finalis tingkat nasional pada kompetisi Hackathon KMIPN VI (Politeknik Negeri Jakarta) & Finalis UI/UX Computer Multi-Challenge Day 2025 (Universitas Syiah Kuala).
               </p>
             </div>
-            <div className="relative h-64 md:h-auto p-4 bg-white flex items-center justify-center">
+            <div className="relative h-64 md:h-auto p-4 bg-surface-container-lowest flex items-center justify-center">
               <img
                 className="w-full h-full object-cover border-4 border-border-dark neo-shadow"
                 src="/kegiatan/kmipn.webp"
@@ -997,15 +997,15 @@ export default function HomeClient({ projects }: HomeClientProps) {
                 <br />
                 TOGETHER
               </h2>
-              <div className="absolute -bottom-6 right-4 bg-white border-4 border-black p-4 neo-shadow transform rotate-3 z-20 flex items-center gap-3">
+              <div className="absolute -bottom-6 right-4 bg-surface-container-lowest border-4 border-border-dark p-4 neo-shadow transform rotate-3 z-20 flex items-center gap-3">
                 <div className="w-4 h-4 bg-primary-fixed rounded-full animate-bounce"></div>
-                <span className="font-display text-label-bold uppercase text-black">Available for Freelance</span>
+                <span className="font-display text-label-bold uppercase text-on-surface">Available for Freelance</span>
               </div>
             </div>
 
             <div className="md:col-span-5 flex flex-col gap-6 justify-center h-full">
               <a
-                className="bg-white border-4 border-black p-6 neo-shadow-lg active-push-lg flex flex-col gap-2 group hover:bg-secondary-fixed transition-colors text-black"
+                className="bg-surface-container-lowest border-4 border-border-dark p-6 neo-shadow-lg active-push-lg flex flex-col gap-2 group hover:bg-secondary-fixed transition-colors text-on-surface hover:text-black"
                 href="mailto:parzivalxdd@gmail.com"
               >
                 <div className="flex items-center justify-between">
@@ -1014,12 +1014,12 @@ export default function HomeClient({ projects }: HomeClientProps) {
                     arrow_forward
                   </span>
                 </div>
-                <span className="font-display text-headline-md uppercase break-words text-black">parzivalxdd@gmail.com</span>
+                <span className="font-display text-headline-md uppercase break-words text-on-surface group-hover:text-black transition-colors">parzivalxdd@gmail.com</span>
               </a>
 
               <div className="grid grid-cols-2 gap-4">
                 <a
-                  className="bg-secondary-fixed border-4 border-black p-4 neo-shadow active-push flex items-center justify-center font-display text-label-bold uppercase hover:bg-white transition-colors text-center text-black"
+                  className="bg-secondary-fixed border-4 border-border-dark p-4 neo-shadow active-push flex items-center justify-center font-display text-label-bold uppercase hover:bg-surface-container-lowest hover:text-on-surface transition-colors text-center text-black"
                   href="https://linkedin.com/in/muhammad-kholis-51ba57195"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -1027,7 +1027,7 @@ export default function HomeClient({ projects }: HomeClientProps) {
                   LinkedIn
                 </a>
                 <a
-                  className="bg-black border-4 border-black p-4 neo-shadow active-push flex items-center justify-center font-display text-label-bold uppercase text-white hover:bg-tertiary-fixed hover:text-black transition-colors text-center"
+                  className="bg-foreground border-4 border-border-dark p-4 neo-shadow active-push flex items-center justify-center font-display text-label-bold uppercase text-background hover:bg-tertiary-fixed hover:text-on-tertiary-fixed transition-colors text-center"
                   href="https://github.com/TissuGalon"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -1035,7 +1035,7 @@ export default function HomeClient({ projects }: HomeClientProps) {
                   GitHub
                 </a>
                 <a
-                  className="bg-tertiary-fixed border-4 border-black p-4 neo-shadow active-push flex items-center justify-center font-display text-label-bold uppercase hover:bg-vibrant-orange transition-colors col-span-2 text-center text-black"
+                  className="bg-tertiary-fixed border-4 border-border-dark p-4 neo-shadow active-push flex items-center justify-center font-display text-label-bold uppercase hover:bg-vibrant-orange transition-colors col-span-2 text-center text-black"
                   href="https://www.instagram.com/its.przvl._"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -1046,8 +1046,8 @@ export default function HomeClient({ projects }: HomeClientProps) {
             </div>
           </div>
 
-          <div className="flex flex-col md:flex-row justify-between items-center w-full py-10 gap-6 bg-white border-4 border-black p-6 neo-shadow mt-16 transform -rotate-1 text-black">
-            <div className="font-display text-headline-md font-black text-on-surface flex items-center gap-2 text-black">
+          <div className="flex flex-col md:flex-row justify-between items-center w-full py-10 gap-6 bg-surface-container-lowest border-4 border-border-dark p-6 neo-shadow mt-16 transform -rotate-1 text-on-surface">
+            <div className="font-display text-headline-md font-black text-on-surface flex items-center gap-2">
               <span
                 className="material-symbols-outlined text-vibrant-orange text-3xl"
                 style={{ fontVariationSettings: "'FILL' 1" }}
@@ -1056,14 +1056,14 @@ export default function HomeClient({ projects }: HomeClientProps) {
               </span>{" "}
               Portfolio
             </div>
-            <div className="font-display text-body-md text-black/60 font-bold">
+            <div className="font-display text-body-md text-on-surface/60 font-bold">
               © 2024 Muhammad Kholis. Built with precision.
             </div>
             <div className="flex gap-6">
-              <span className="font-display font-bold text-black/50">
+              <span className="font-display font-bold text-on-surface/50">
                 Langsa, Indonesia
               </span>
-              <span className="font-display font-bold text-black/50">
+              <span className="font-display font-bold text-on-surface/50">
                 +62 851-6178-7501
               </span>
             </div>
